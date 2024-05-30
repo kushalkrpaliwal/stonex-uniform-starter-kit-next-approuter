@@ -41,6 +41,8 @@ import { testimonialMappings } from './Testimonial';
 import { videoMappings } from './Video';
 import { enrichmentSetterMappings } from './EnrichmentSetter';
 import { pageMapping } from './Page/Page';
+import { stonexThemePackMappings } from './StonexThemePackComponent';
+import { brandCTAMappings } from './BrandCTA';
 
 export const baseComponentMappings = {
   ...accordionItemMappings,
@@ -86,6 +88,8 @@ export const baseComponentMappings = {
   ...testimonialMappings,
   ...videoMappings,
   ...pageMapping,
+  ...stonexThemePackMappings,
+  ...brandCTAMappings,
 };
 
 import { createComponentResolver } from '@/utilities/canvas/componentResolver';
