@@ -2,7 +2,12 @@ import { CSSProperties } from 'react';
 import { ComponentProps } from '@uniformdev/canvas-next-rsc/component';
 import { AdvancedContainer } from './AdvancedContainer';
 import { withoutContainer } from '../../../hocs/withoutContainer';
-import { BoxModel } from '../../../../../Stonex Theme Pack/components/parameters/BoxModelEditor';
+
+export type BoxModel = {
+  padding: Sides;
+  border: Sides;
+  margin: Sides;
+};
 
 export enum AdvancedContainerVariants {
   FluidContent = 'fluidContent',

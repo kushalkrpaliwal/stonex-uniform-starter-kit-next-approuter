@@ -2,10 +2,9 @@
 import { ChangeEventHandler, FC, useEffect, useState } from 'react';
 import classNames from 'classnames';
 import { StonexThemePackProps } from '.';
-import StaticThemesSelector from '../../../../Stonex Theme Pack/components/ThemeSelector';
 
-import statickThemes from '../../../../Stonex Theme Pack/public/staticThemes.json';
-import { Theme } from '../../../../Stonex Theme Pack/types/common';
+import statickThemes from '../../../public/staticThemes.json';
+import StaticThemesSelector, { Theme } from '@/components/ThemeSelector/ThemeSelector';
 
 const themeSelection = ['dark', 'light'];
 
