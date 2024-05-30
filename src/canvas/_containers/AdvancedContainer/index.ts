@@ -3,6 +3,13 @@ import { ComponentProps } from '@uniformdev/canvas-next-rsc/component';
 import { AdvancedContainer } from './AdvancedContainer';
 import { withoutContainer } from '../../../hocs/withoutContainer';
 
+type Sides = {
+  top: number;
+  right: number;
+  bottom: number;
+  left: number;
+};
+
 export type BoxModel = {
   padding: Sides;
   border: Sides;
