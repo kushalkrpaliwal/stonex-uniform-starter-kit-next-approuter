@@ -21,13 +21,15 @@ export const BrandCTAComponent: FC<BrandCTAComponentProps> = props => {
   };
 
   const sizeClasses = clsx({
-    'p-CTA-sm': size === 'sm' && type !== 'tertiary',
-    'p-CTA-lg': size === 'lg' && type !== 'tertiary',
+    'p-Button-sm': size === 'sm' && type !== 'tertiary',
+    'p-Button-lg': size === 'lg' && type !== 'tertiary',
     'font-type-CTA-primary-sm': size === 'sm',
     'font-type-CTA-primary-lg': size === 'lg' || !size,
     [`mt-${topSpacing?.label}`]: !!topSpacing,
     [`mb-${bottomSpacing?.label}`]: !!bottomSpacing,
   });
+
+  console.log(component);
 
   return (
     <Link href={'/'} className={classNames(sizeClasses, className)}>

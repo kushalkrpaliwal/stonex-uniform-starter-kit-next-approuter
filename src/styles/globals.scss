@@ -1,37 +1,23 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailiwnd.css";
 
-@import "fonts";
-// Tokens import
-@import "../tokens/global/functional.css";
+/*// Fonts*/
+@import "fonts.css";
 
-@import "../tokens/css/wireframe/mobile.css";
-@import "../tokens/css/stonex/light/mobile.css";
-@import "../tokens/css/stonex/dark/mobile.css";
-@import "../tokens/css/forex/light/mobile.css";
-@import "../tokens/css/forex/dark/mobile.css";
-@import "../tokens/css/ci/light/mobile.css";
-@import "../tokens/css/ci/dark/mobile.css";
+/*// General import*/
+@import "../tokens/css/alias/typography.css";
+@import "../tokens/css/global/dimensions.css";
+@import "../tokens/css/global/functional.css";
+/*//@import "general";*/
 
-@import "../tokens/css/wireframe/tablet.css" (screen and min-width: #{theme("screens.md")});
-@import "../tokens/css/stonex/light/tablet.css" (screen and min-width: #{theme("screens.md")});
-@import "../tokens/css/stonex/dark/tablet.css" (screen and min-width: #{theme("screens.md")});
-@import "../tokens/css/forex/light/tablet.css" (screen and min-width: #{theme("screens.md")});
-@import "../tokens/css/forex/dark/tablet.css" (screen and min-width: #{theme("screens.md")});
-@import "../tokens/css/ci/light/tablet.css" (screen and min-width: #{theme("screens.md")});
-@import "../tokens/css/ci/dark/tablet.css" (screen and min-width: #{theme("screens.md")});
+/*// Brands import*/
+@import "stonex.css";
+@import "forex.css";
+@import "cityindex.css";
 
-@import "../tokens/css/wireframe/desktop.css" (screen and min-width: #{theme("screens.lg")});
-@import "../tokens/css/stonex/light/desktop.css" (screen and min-width: #{theme("screens.lg")});
-@import "../tokens/css/stonex/dark/desktop.css" (screen and min-width: #{theme("screens.lg")});
-@import "../tokens/css/forex/light/desktop.css" (screen and min-width: #{theme("screens.lg")});
-@import "../tokens/css/forex/dark/desktop.css" (screen and min-width: #{theme("screens.lg")});
-@import "../tokens/css/ci/light/desktop.css" (screen and min-width: #{theme("screens.lg")});
-@import "../tokens/css/ci/dark/desktop.css" (screen and min-width: #{theme("screens.lg")});
+/*// Extensions import*/
+@import "_buttons.scss";
 
-@import "buttons";
-
+/*// TODO: Cleanup*/
 .theme-item {
   @apply flex items-center p-8 rounded-4 cursor-pointer;
   &.selected-theme-item {
@@ -41,4 +27,8 @@
   p {
     display: none;
   }
+}
+
+h1 {
+  display: none;
 }

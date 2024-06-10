@@ -1,10 +1,12 @@
+// @ts-ignore
 import path from 'path';
 import type { StorybookConfig } from '@storybook/nextjs';
+
 const config: StorybookConfig = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
-    '@storybook/addon-links',
-    'storybook-addon-themes',
+    // '@storybook/addon-links',
+    // 'storybook-addon-themes',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     {
@@ -20,18 +22,20 @@ const config: StorybookConfig = {
     name: '@storybook/nextjs',
     options: {},
   },
-  webpackFinal: async config => {
-    const alias = config?.resolve?.alias || {};
+  webpackFinal: async (config) => {
+    const { module = {}, resolve = {} } = config;
+    const { alias = {}, fallback = {} } = resolve;
+
     return {
       ...config,
       resolve: {
-        ...config.resolve,
+        ...resolve,
         alias: {
           ...alias,
           '@': path.resolve(__dirname, '../src/'),
         },
         fallback: {
-          ...config.resolve?.fallback,
+          ...fallback,
           zlib: false,
           fs: false,
           stream: false,

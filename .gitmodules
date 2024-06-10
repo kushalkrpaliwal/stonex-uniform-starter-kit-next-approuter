@@ -1,0 +1,6 @@
+[submodule "src/themes"]
+	path = src/themes
+	url = https://github.com/stonexjacob/tokens/
+[submodule "src/figma"]
+	path = src/figma
+	url = https://github.com/stonexjacob/tokens/

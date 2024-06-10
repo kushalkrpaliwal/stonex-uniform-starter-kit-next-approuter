@@ -1,11 +1,16 @@
 import { ComponentProps } from '@uniformdev/canvas-next-rsc/component';
 import { BrandCTAComponent, SpacingOptionType } from './BrandCTAComponent';
 
+export const sizes = ['sm', 'lg'] as const;
+export const brands = ['forex', 'cityindex', 'stonex'] as const;
+export const types = ['primary', 'secondary', 'tertiary'] as const;
+export const styles = ['brand', 'info', 'success', 'warning', 'error'] as const;
+
 export type BrandCTAProps = {
-  brand?: 'forex' | 'ci' | 'stonex';
-  size?: 'sm' | 'lg';
-  type?: 'primary' | 'secondary' | 'tertiary';
-  style?: 'brand' | 'info' | 'success' | 'warning' | 'error';
+  size?: (typeof sizes)[number];
+  brand?: (typeof brands)[number];
+  type?: (typeof types)[number];
+  style?: (typeof styles)[number];
   icon?: string;
   className?: string;
 };

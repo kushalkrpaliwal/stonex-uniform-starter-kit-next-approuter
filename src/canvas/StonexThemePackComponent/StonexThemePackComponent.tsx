@@ -18,9 +18,7 @@ export const StonexThemePackComponent: FC<StonexThemePackProps> = ({ headingTag 
 
   const HeadingTag = headingTag;
   useEffect(() => {
-    document
-      .querySelector('body')
-      ?.setAttribute('data-brand', brand.themeName === 'cityIndex' ? 'ci' : brand.themeName);
+    document.querySelector('body')?.setAttribute('data-brand', brand.themeName?.toLowerCase());
     document.querySelector('body')?.setAttribute('data-theme', theme);
   }, [brand, theme]);
 
@@ -28,7 +26,7 @@ export const StonexThemePackComponent: FC<StonexThemePackProps> = ({ headingTag 
     <>
       <div
         className={classNames(
-          'flex border-CTA flex-col items-center rounded-4 border-1 gap-4 bg-color-blue-0 border-color-blue-100 m-12 !p-12 text-primary-content w-[fit-content] justify-center'
+          'flex border-Button flex-col items-center rounded-4 border-1 gap-4 bg-color-blue-0 border-color-blue-100 m-12 !p-12 text-primary-content w-[fit-content] justify-center'
         )}
       >
         <HeadingTag className={'font-bold'}>Select brand: </HeadingTag>
