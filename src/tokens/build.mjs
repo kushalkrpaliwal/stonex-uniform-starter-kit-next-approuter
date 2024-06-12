@@ -20,7 +20,6 @@ async function run () {
   const deviceMobile = JSON.parse(await promises.readFile('./src/figma/themes/device/mobile.json', 'utf-8'))
   const tokenSetOrder = JSON.parse(await promises.readFile('./src/figma/themes/$metadata.json', 'utf-8'))?.tokenSetOrder
 
-
   const themes = permutateThemes($themes, { separator: '/' })
 
   const cssTransforms = [
@@ -72,7 +71,7 @@ async function run () {
       theme,
       device,
       selector: [brand && `[data-brand='${brand}']`, theme && `[data-theme='${theme}']`].join(' '),
-      source: tokensSets.map(tokenSet => `${tokenSet}.json`),
+      source: tokensSets.map(tokenSet => `./src/figma/themes/${tokenSet}.json`),
     }
   })
 
@@ -160,7 +159,7 @@ async function run () {
     .map(name => {
       return {
         ...baseConfig,
-        source: tokenSetOrder.map(tokenSet => `${tokenSet}.json`),
+        source: tokenSetOrder.map(tokenSet => `./src/figma/themes/${tokenSet}.json`),
         platforms: {
           globals: {
             transforms: cssTransforms,
@@ -186,13 +185,13 @@ async function run () {
     const sd = StyleDictionary.extend(glb)
       .cleanAllPlatforms()
       .buildAllPlatforms()
-  })
+  });
 
   brands.forEach(brand => {
     const sd = StyleDictionary.extend(brand)
       .cleanAllPlatforms()
       .buildAllPlatforms()
-  })
+  });
 }
 
 run()

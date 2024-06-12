@@ -9,7 +9,8 @@
     "pnpm": "please-use-npm"
   },
   "scripts": {
-    "parseTokens": "node src/tokens/build.mjs",
+    "build-utilities": "node src/tokens/build.mjs",
+    "update-figma-tokens": "cd src/figma && git pull origin main && npm run build-utilities",
     "dev": "run-s uniform:manifest:pull dev:next",
     "dev:next": "next dev",
     "build:next": "next build",
