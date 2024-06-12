@@ -10,12 +10,19 @@ $styles: (
         error
 );
 
+// Suitable way to render gradient text.
+// This is a bit hacky but works well with all browsers, although difficult to maintain along with simple background and interactions
+// replace once better solution is available on the market(mid 2024).
 @mixin withGradientColor($color) {
-  background: $color;
+  background: $color text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
+
+@mixin resetGradientColor() {
+  -webkit-text-fill-color: currentColor;
+}
+
 @mixin withGradientColorOnChange($color) {
   background: $color text;
 }
@@ -23,6 +30,8 @@ $styles: (
 @mixin withGradientRoundedBorder($color) {
   position: relative;
 
+  // Most suitable way to render border with border radius and gradient as a color.
+  // This is a bit hacky but works well with all browsers, replace once better solution is available on the market(mid 2024).
   &::before {
     content: "";
     position: absolute;
@@ -41,6 +50,7 @@ $styles: (
     z-index: 1;
   }
 }
+
 @mixin withGradientRoundedBorderOnChange($color) {
   &::before {
     background: $color;
@@ -53,10 +63,8 @@ $styles: (
 
     // Make browser accessibility work better with rounded buttons
     &:focus-visible {
-      outline-color: currentColor;
-      outline-width: 2px;
+      outline: currentColor solid 2px;
       outline-offset: 0;
-      outline-style: solid;
     }
   }
 
@@ -102,14 +110,16 @@ $styles: (
     &:hover {
       @include withGradientColorOnChange(var(--color-button-secondary-foreground-hover));
       @include withGradientRoundedBorderOnChange(var(--color-button-secondary-foreground-hover));
+      @include resetGradientColor;
+      background: var(--color-button-secondary-background-hover);
       color: var(--color-button-secondary-foreground-hover);
     }
 
     &:active, &:focus {
       @include withGradientRoundedBorderOnChange(var(--color-button-secondary-background-active));
+      @include resetGradientColor;
       background: var(--color-button-secondary-background-active);
       color: var(--color-button-secondary-foreground-active);
-      -webkit-text-fill-color: currentColor;
     }
   }
 

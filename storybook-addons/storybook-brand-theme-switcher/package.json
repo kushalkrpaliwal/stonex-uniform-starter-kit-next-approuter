@@ -1,0 +1,11 @@
+{
+  "name": "storybook-brand-theme-switcher",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "peerDependencies": {
+    "@storybook/api": "^7.0.0",
+    "@storybook/components": "^7.0.0",
+    "@storybook/manager-api": "^7.0.0",
+    "react": "^16.0.0 || ^17.0.0"
+  }
+}
