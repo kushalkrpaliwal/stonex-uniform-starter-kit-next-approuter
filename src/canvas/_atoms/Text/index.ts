@@ -23,10 +23,10 @@ export type TextLetterSpacing = 'tighter' | 'tight' | 'normal' | 'wide' | 'wider
 export type TextProps = ComponentProps<{
   text?: string;
   tag?: TextTags;
-  color?: Types.ThemeColorsValues | string;
   size?: TextSizes;
   letterSpacing?: TextLetterSpacing;
   style?: CSSProperties;
+  textColor: string;
 }>;
 
 export const textMappings = {

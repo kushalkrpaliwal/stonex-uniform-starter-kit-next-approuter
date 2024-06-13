@@ -41,7 +41,10 @@ module.exports = {
   content: ['./src/**/*.{js,ts,tsx,json}'],
   theme: {
     extend: {
-      colors,
+      colors: {
+        ...colors,
+        transparent: 'transparent',
+      },
       ...spacing,
       borderRadius: borderRadius.border,
       boxShadow: boxShadow.shadow,
