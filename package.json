@@ -30,6 +30,8 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@carbon/icons": "^11.43.0",
+    "@carbon/icons-react": "^11.43.0",
     "@contentful/rich-text-html-renderer": "^16.1.0",
     "@contentful/rich-text-types": "^16.2.0",
     "@tokens-studio/sd-transforms": "^0.14.4",
