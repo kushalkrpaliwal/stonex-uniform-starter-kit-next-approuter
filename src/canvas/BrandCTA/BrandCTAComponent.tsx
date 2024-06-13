@@ -5,7 +5,7 @@ import { UniformText } from '@uniformdev/canvas-next-rsc/component';
 import { BrandCTAComponentProps } from '.';
 import Link from 'next/link';
 import clsx from 'clsx';
-// import IconArrow from '@/components/IconArrow';
+import CarbonIcon from '@/components/CarbonIcon';
 
 export type SpacingOptionType = {
   label: string;
@@ -13,7 +13,7 @@ export type SpacingOptionType = {
 };
 
 export const BrandCTAComponent: FC<BrandCTAComponentProps> = props => {
-  const { context, component, ctaParameters, topSpacing, bottomSpacing } = props;
+  const { context, component, ctaParameters, topSpacing, bottomSpacing, iconName, rightIconPlacement } = props;
   const { className, type, size } = ctaParameters || {
     className: '',
     type: 'primary',
@@ -27,14 +27,16 @@ export const BrandCTAComponent: FC<BrandCTAComponentProps> = props => {
     'font-type-CTA-primary-lg': size === 'lg' || !size,
     [`mt-${topSpacing?.label}`]: !!topSpacing,
     [`mb-${bottomSpacing?.label}`]: !!bottomSpacing,
+    'flex-row-reverse': rightIconPlacement,
   });
 
-  console.log(component);
-
   return (
-    <Link href={'/'} className={classNames(sizeClasses, className)}>
-      {/*<IconArrow width={15} />*/}
-      <UniformText parameterId="label" component={component} context={context} />
-    </Link>
+    <>
+      <Link href={'/'} className={classNames(sizeClasses, className)}>
+        {iconName && <CarbonIcon iconName={iconName} />}
+
+        <UniformText parameterId="label" component={component} context={context} />
+      </Link>
+    </>
   );
 };

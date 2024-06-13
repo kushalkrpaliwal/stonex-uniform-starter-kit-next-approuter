@@ -11,7 +11,6 @@ export type BrandCTAProps = {
   brand?: (typeof brands)[number];
   type?: (typeof types)[number];
   style?: (typeof styles)[number];
-  icon?: string;
   className?: string;
 };
 
@@ -19,6 +18,8 @@ export type BrandCTAComponentProps = ComponentProps<{
   ctaParameters: BrandCTAProps;
   topSpacing: SpacingOptionType;
   bottomSpacing: SpacingOptionType;
+  iconName?: string;
+  rightIconPlacement?: boolean;
 }>;
 
 export const brandCTAMappings = {
