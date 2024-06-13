@@ -2,6 +2,8 @@ import { permutateThemes, registerTransforms, transforms as sdTransforms } from 
 import StyleDictionary from 'style-dictionary'
 import { promises } from 'fs'
 
+const sourcePath = './src/figma/themes';
+
 registerTransforms(StyleDictionary, {
   /* options here if needed */
 })
@@ -14,11 +16,11 @@ StyleDictionary.registerTransform({
 })
 
 async function run () {
-  const $themes = JSON.parse(await promises.readFile('./src/figma/themes/$themes.json', 'utf-8'))
-  const deviceDesktop = JSON.parse(await promises.readFile('./src/figma/themes/device/desktop.json', 'utf-8'))
-  const deviceTablet = JSON.parse(await promises.readFile('./src/figma/themes/device/tablet.json', 'utf-8'))
-  const deviceMobile = JSON.parse(await promises.readFile('./src/figma/themes/device/mobile.json', 'utf-8'))
-  const tokenSetOrder = JSON.parse(await promises.readFile('./src/figma/themes/$metadata.json', 'utf-8'))?.tokenSetOrder
+  const $themes = JSON.parse(await promises.readFile(`${sourcePath}/$themes.json`, 'utf-8'))
+  const deviceDesktop = JSON.parse(await promises.readFile(`${sourcePath}/device/desktop.json`, 'utf-8'))
+  const deviceTablet = JSON.parse(await promises.readFile(`${sourcePath}/device/tablet.json`, 'utf-8'))
+  const deviceMobile = JSON.parse(await promises.readFile(`${sourcePath}/device/mobile.json`, 'utf-8'))
+  const tokenSetOrder = JSON.parse(await promises.readFile(`${sourcePath}/$metadata.json`, 'utf-8'))?.tokenSetOrder
 
   const themes = permutateThemes($themes, { separator: '/' })
 
@@ -71,7 +73,7 @@ async function run () {
       theme,
       device,
       selector: [brand && `[data-brand='${brand}']`, theme && `[data-theme='${theme}']`].join(' '),
-      source: tokensSets.map(tokenSet => `./src/figma/themes/${tokenSet}.json`),
+      source: tokensSets.map(tokenSet => `${sourcePath}/${tokenSet}.json`),
     }
   })
 
@@ -159,7 +161,7 @@ async function run () {
     .map(name => {
       return {
         ...baseConfig,
-        source: tokenSetOrder.map(tokenSet => `./src/figma/themes/${tokenSet}.json`),
+        source: tokenSetOrder.map(tokenSet => `${sourcePath}/${tokenSet}.json`),
         platforms: {
           globals: {
             transforms: cssTransforms,
