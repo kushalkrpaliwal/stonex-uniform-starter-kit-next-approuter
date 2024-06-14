@@ -36,7 +36,15 @@ declare namespace Types {
 
   type AvailableColor = 'primary' | 'secondary' | 'accent' | 'base-200' | 'base-300';
 
-  type AvailableBannerPosition = 'top' | 'center' | 'bottom';
+  type HorizontalAlignment = 'left' | 'center' | 'right';
+
+  type VerticalAlignment = 'top' | 'center' | 'bottom';
+
+  type JustifySelf = HorizontalAlignment | 'stretch' | 'auto';
+
+  type AlignSelf = VerticalAlignment | 'stretch' | 'auto' | 'baseline';
+
+  type AvailableBannerPosition = VerticalAlignment;
 
   type AvailableObjectFit = 'contain' | 'cover' | 'fill' | 'none';
 
@@ -69,8 +77,6 @@ declare namespace Types {
   type AvailableWidth = PercentRange;
 
   type HeadingStyles = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
-
-  type HorizontalAlignment = 'left' | 'center' | 'right';
 
   type SupportedThemes = 'uniform' | 'javadrip' | 'custom';
 
