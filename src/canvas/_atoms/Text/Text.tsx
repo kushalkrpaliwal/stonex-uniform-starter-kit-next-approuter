@@ -31,7 +31,7 @@ export const Text: FC<TextProps> = ({
       placeholder="Text goes here"
       parameterId="text"
       style={{
-        background: textColor,
+        background: textColor || '#000',
         ...style,
         ...restStyles,
       }}
