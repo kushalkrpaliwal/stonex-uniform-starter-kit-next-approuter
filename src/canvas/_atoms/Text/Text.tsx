@@ -21,7 +21,7 @@ export const Text: FC<TextProps> = ({
   slots,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   slotIndex,
-  textColor,
+  textColor = '#000',
   ...restStyles
 }) => {
   const Tag = tag || DEFAULT_TAG;
@@ -31,7 +31,7 @@ export const Text: FC<TextProps> = ({
       placeholder="Text goes here"
       parameterId="text"
       style={{
-        background: textColor || '#000',
+        background: textColor,
         ...style,
         ...restStyles,
       }}
