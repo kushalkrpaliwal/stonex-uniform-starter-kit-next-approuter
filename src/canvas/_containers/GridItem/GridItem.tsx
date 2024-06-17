@@ -8,6 +8,7 @@ import {
   getGridRowsStartClass,
 } from './helpers';
 import { GridItemProps } from '.';
+import { getFlexBoxStyles } from '@/canvas/_containers/helpers/flexBox';
 
 const GridItem: FC<GridItemProps> = ({
   columnStart,
@@ -29,12 +30,7 @@ const GridItem: FC<GridItemProps> = ({
       getGridRowsSpanClass(rowSpan),
       alignSelf,
       justifySelf,
-      {
-        flex: flexBox?.useFlexBox,
-        [flexBox?.flexDirection as string]: flexBox?.useFlexBox,
-        [flexBox?.alignItems as string]: flexBox?.useFlexBox,
-        [flexBox?.justifyContent as string]: flexBox?.useFlexBox,
-      }
+      getFlexBoxStyles(flexBox)
     )}
   >
     <UniformSlot context={context} slot={slots.inner} data={component} />

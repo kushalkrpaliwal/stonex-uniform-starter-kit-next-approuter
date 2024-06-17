@@ -1,7 +1,6 @@
 import { CSSProperties } from 'react';
 import { ComponentProps } from '@uniformdev/canvas-next-rsc/component';
 import { AdvancedContainer } from './AdvancedContainer';
-import { withoutContainer } from '../../../hocs/withoutContainer';
 
 type Sides = {
   top: number;
@@ -34,7 +33,7 @@ export type AdvancedContainerProps = ComponentProps<
 >;
 
 export const advancedContainerMappings = {
-  advancedContainer: withoutContainer(AdvancedContainer, { withoutPaddings: true }),
+  advancedContainer: AdvancedContainer,
 };
 
 export default AdvancedContainer;

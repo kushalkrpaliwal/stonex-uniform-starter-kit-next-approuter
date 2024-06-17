@@ -1,13 +1,6 @@
 import { ComponentProps } from '@uniformdev/canvas-next-rsc/component';
 import GridItem from './GridItem';
-
-// TODO: Make unified with Next App
-interface FlexBoxValue {
-  useFlexBox: boolean;
-  alignItems: string;
-  justifyContent: string;
-  flexDirection: string;
-}
+import { FlexBoxValue } from '@/canvas/_containers/helpers/flexBox';
 
 export type GridItemProps = ComponentProps<
   {

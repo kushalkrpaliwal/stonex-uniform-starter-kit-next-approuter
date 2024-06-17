@@ -7,13 +7,13 @@ import wireframeTokens from './json/brand/wireframe/base.json';
 import wireframeDeviceTokens from './json/brand/wireframe/device/desktop.json';
 import forexBaseTokens from './json/brand/forex/base.json';
 import forexThemeTokens from './json/brand/forex/base.json';
-import forexDeviceTokens from './json/brand/forex/dark.json';
+import forexDeviceTokens from './json/brand/forex/device/desktop.json';
 import stonexBaseTokens from './json/brand/stonex/base.json';
 import stonexThemeTokens from './json/brand/stonex/base.json';
-import stonexDeviceTokens from './json/brand/stonex/dark.json';
+import stonexDeviceTokens from './json/brand/stonex/device/desktop.json';
 import cityindexBaseTokens from './json/brand/cityindex/base.json';
 import cityindexThemeTokens from './json/brand/cityindex/base.json';
-import cityindexDeviceTokens from './json/brand/cityindex/dark.json';
+import cityindexDeviceTokens from './json/brand/cityindex/device/desktop.json';
 
 export const tokens = [
   ...Object.values(typographyTokens),

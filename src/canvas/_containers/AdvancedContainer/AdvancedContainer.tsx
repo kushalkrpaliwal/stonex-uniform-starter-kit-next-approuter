@@ -2,7 +2,6 @@ import { FC } from 'react';
 import { UniformSlot } from '@uniformdev/canvas-next-rsc/component';
 import { AdvancedContainerProps, AdvancedContainerVariants } from '.';
 import classNames from 'classnames';
-import clsx from 'clsx';
 
 export const AdvancedContainer: FC<AdvancedContainerProps> = ({
   title,
@@ -18,7 +17,8 @@ export const AdvancedContainer: FC<AdvancedContainerProps> = ({
 }) => {
   return (
     <div
-      className={clsx(
+      title={title}
+      className={classNames(
         // Class names applied on the fly on component level
         Boolean(boxModel) && Object.entries(boxModel.padding).map(([side, value]) => `p${side[0]}-${value}`),
         Boolean(boxModel) && Object.entries(boxModel.border).map(([side, value]) => `border-${side[0]}-${value}`),
@@ -26,27 +26,23 @@ export const AdvancedContainer: FC<AdvancedContainerProps> = ({
         // Class names applied directly from component props
         borderRadius,
         boxShadow,
-        { 'overflow-hidden': !!borderRadius }
+        {
+          'overflow-hidden': !!borderRadius,
+          'max-w-screen-xl mx-auto': component.variant !== AdvancedContainerVariants.FluidContent,
+        }
       )}
       style={{
         // Styles applied inline based on real token value (like css variable)
         background: backgroundColor,
         borderColor,
+        ...style,
       }}
     >
-      <div
-        title={title}
-        className={classNames('relative w-full h-full', {
-          'max-w-screen-xl mx-auto': component.variant !== AdvancedContainerVariants.FluidContent,
-        })}
-        style={{ ...style }}
-      >
-        <div className="absolute w-full h-full top-0 left-0 z-10 overflow-hidden">
-          <UniformSlot context={context} slot={slots['background']} data={component} />
-        </div>
-        <div className="relative z-20">
-          <UniformSlot context={context} slot={slots['content']} data={component} />
-        </div>
+      <div className="absolute w-full h-full top-0 left-0 z-10 overflow-hidden">
+        <UniformSlot context={context} slot={slots['background']} data={component} />
+      </div>
+      <div className="relative z-20">
+        <UniformSlot context={context} slot={slots['content']} data={component} />
       </div>
     </div>
   );
