@@ -53,18 +53,23 @@ module.exports = {
     },
     padding: {
       ...spacing.padding,
-      ...screenSizes,
     },
     margin: {
       auto: 'auto',
       ...spacing.padding,
-      ...screenSizes,
     },
     gap: {
       ...spacing.gap,
     },
     boxShadow: boxShadow.shadow,
     borderRadius: borderRadius.border,
+    borderWidth: {
+      1: '1px',
+      2: '2px',
+      3: '3px',
+      4: '4px',
+      5: '5px',
+    },
     extend: {
       colors: {
         ...colors,
