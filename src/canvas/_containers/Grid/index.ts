@@ -1,7 +1,7 @@
 import { ComponentProps } from '@uniformdev/canvas-next-rsc/component';
 import { Grid } from './Grid';
 import { ContainerProps } from '../Container';
-import { withoutContainer } from '../../../hocs/withoutContainer';
+import { withoutContainer } from '@/hocs/withoutContainer';
 
 export type GridProps = ComponentProps<
   ContainerProps & {

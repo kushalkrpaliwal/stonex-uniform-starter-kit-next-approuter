@@ -1,4 +1,4 @@
-import { filterTokensByType } from './fns';
+import { filterTokensByType, Tokens } from './fns';
 
 import typographyTokens from './json/alias/typography.json';
 import functionalTokens from './json/global/functional.json';
@@ -15,7 +15,7 @@ import cityindexBaseTokens from './json/brand/cityindex/base.json';
 import cityindexThemeTokens from './json/brand/cityindex/base.json';
 import cityindexDeviceTokens from './json/brand/cityindex/device/desktop.json';
 
-export const tokens = [
+export const tokens: Tokens = [
   ...Object.values(typographyTokens),
   ...Object.values(functionalTokens),
   ...Object.values(dimensionsTokens),

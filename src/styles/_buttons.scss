@@ -59,7 +59,7 @@ $styles: (
 
 @layer utilities {
   .cta-button {
-    @apply flex items-center justify-center gap-8 w-[fit-content];
+    @apply flex items-center justify-center gap-xxxxs w-[fit-content];
 
     // Make browser accessibility work better with rounded buttons
     &:focus-visible {

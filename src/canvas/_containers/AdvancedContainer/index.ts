@@ -1,19 +1,7 @@
 import { CSSProperties } from 'react';
 import { ComponentProps } from '@uniformdev/canvas-next-rsc/component';
 import { AdvancedContainer } from './AdvancedContainer';
-
-type Sides = {
-  top: number;
-  right: number;
-  bottom: number;
-  left: number;
-};
-
-export type BoxModel = {
-  padding: Sides;
-  border: Sides;
-  margin: Sides;
-};
+import { BoxModel } from '../helpers/boxModel';
 
 export enum AdvancedContainerVariants {
   FluidContent = 'fluidContent',

@@ -1,7 +1,7 @@
-@import "tailiwnd.css";
+@import "tailiwnd";
 
 /*// Fonts*/
-@import "fonts.css";
+@import "fonts";
 
 /*// General import*/
 @import "../tokens/css/alias/typography.css";
@@ -10,16 +10,17 @@
 /*//@import "general";*/
 
 /*// Brands import*/
-@import "stonex.css";
-@import "forex.css";
-@import "cityindex.css";
+@import "stonex";
+@import "forex";
+@import "cityindex";
 
 /*// Extensions import*/
-@import "_buttons.scss";
+@import "container";
+@import "buttons";
 
 /*// TODO: Cleanup*/
 .theme-item {
-  @apply flex items-center p-8 rounded-4 cursor-pointer;
+  @apply flex items-center p-xxxxs rounded-md cursor-pointer;
   &.selected-theme-item {
     @apply bg-blue-300;
   }

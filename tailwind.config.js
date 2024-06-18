@@ -37,24 +37,42 @@ const buttonsSafelist = typesLoop.reduce((acc, type) => {
   return acc;
 }, []);
 
+const screenSizes = Object.entries(sizing.screen).reduce((acc, [key, val]) => {
+  acc[`breakpoint-${key}`] = val;
+  return acc;
+}, {});
+
 module.exports = {
   content: ['./src/**/*.{js,ts,tsx,json}'],
   theme: {
+    container: {},
+    spacing: {
+      1: '1px',
+      ...spacing.spacing,
+      ...screenSizes,
+    },
+    padding: {
+      ...spacing.padding,
+      ...screenSizes,
+    },
+    margin: {
+      auto: 'auto',
+      ...spacing.padding,
+      ...screenSizes,
+    },
+    gap: {
+      ...spacing.gap,
+    },
+    boxShadow: boxShadow.shadow,
+    borderRadius: borderRadius.border,
     extend: {
       colors: {
         ...colors,
         transparent: 'transparent',
       },
-      ...spacing,
-      borderRadius: borderRadius.border,
-      boxShadow: boxShadow.shadow,
       fontSize: {
         ...fontSize.size.heading,
         ...fontSize.size.body,
-      },
-      borderWidth: {
-        1: '1px',
-        ...sizing.size,
       },
     },
   },
@@ -70,6 +88,9 @@ module.exports = {
     ...buttonsSafelist,
     { pattern: /(pt|pr|pb|pl|mt|mr|mb|ml|border-t|border-r|border-b|border-l|rounded|shadow)-.+/ },
   ],
+  corePlugins: {
+    container: false,
+  },
   daisyui: {
     styled: true,
     base: true,

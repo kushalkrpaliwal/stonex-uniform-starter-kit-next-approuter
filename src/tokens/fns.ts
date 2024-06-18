@@ -1,13 +1,18 @@
 type Value = string | number | boolean | Record<string, unknown>;
+type Attribute = {
+  category: string;
+  type?: string;
+};
 
-type Token = {
+export type Token = {
   type: string;
   value: Value;
   path: string[];
   name: string;
+  attributes: Attribute;
 };
 
-type Tokens = Token[];
+export type Tokens = Token[];
 
 export type NestedValue = string | Record<string, unknown>;
 

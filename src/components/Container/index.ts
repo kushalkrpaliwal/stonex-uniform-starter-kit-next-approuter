@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
-import { BackgroundTypes, PaddingSize } from '../../utilities/styling';
+import { BackgroundTypes, PaddingSize } from '@/utilities/styling';
 import { FlexBoxValue } from '@/canvas/_containers/helpers/flexBox';
+import { BoxModel } from '@/canvas/_containers/helpers/boxModel';
 
 export enum ContainerVariants {
   FluidContent = 'fluidContent',
@@ -17,6 +18,7 @@ export type ContainerProps = {
   containerVariant?: string;
   className?: string;
   flexBox?: FlexBoxValue;
+  boxModel?: BoxModel;
 };
 
 export * from './BaseContainer';

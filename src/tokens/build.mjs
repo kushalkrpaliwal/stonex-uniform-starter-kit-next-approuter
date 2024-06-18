@@ -2,7 +2,7 @@ import { permutateThemes, registerTransforms, transforms as sdTransforms } from 
 import StyleDictionary from 'style-dictionary'
 import { promises } from 'fs'
 
-const sourcePath = './src/figma/themes';
+const sourcePath = './src/figma/themes'
 
 registerTransforms(StyleDictionary, {
   /* options here if needed */
@@ -13,6 +13,21 @@ StyleDictionary.registerTransform({
   type: 'value',
   matcher: token => token.name === 'background-image',
   transformer: token => `"${token.original.value}"`
+})
+
+StyleDictionary.registerTransform({
+  name: 'name/border',
+  type: 'name',
+  matcher: token => token.type === 'borderRadius',
+  transformer: token => token.name.replace('border', 'rounded')
+})
+
+// This doesn't work for some reason
+StyleDictionary.registerTransform({
+  name: `figma/calc`,
+  type: `value`,
+  matcher: (token) => token.name === 'content' && token.type === 'sizing',
+  transformer: (token) => `calc(${token.original.value})`,
 })
 
 async function run () {
@@ -39,7 +54,10 @@ async function run () {
     'ts/shadow/css/shorthand',
     'ts/border/css/shorthand',
     'ts/opacity',
-    'css/url']
+    'css/url',
+    'name/border',
+    'figma/calc',
+  ]
 
   const globalTransforms = [
     ...sdTransforms,
@@ -78,7 +96,6 @@ async function run () {
   })
 
   const brands = configs.map(({
-      filePath,
       brand,
       theme,
       device,
@@ -87,11 +104,11 @@ async function run () {
       format,
       preprocessors,
     }) => {
-    const breakpoint = device === 'desktop'
-      ? deviceDesktop.screen.width.value
-      : device === 'tablet'
-        ? deviceTablet.screen.width.value
-        : deviceMobile.screen.width.value
+      const breakpoint = device === 'desktop'
+        ? deviceDesktop.screen.width.value
+        : device === 'tablet'
+          ? deviceTablet.screen.width.value
+          : deviceMobile.screen.width.value
       return {
         source,
         format,
@@ -140,7 +157,7 @@ async function run () {
                 format: 'css/variables',
                 options: {
                   ...baseCssFormatOptions,
-                  selector: `@media (min-width: ${breakpoint}) [data-brand='${brand}']`
+                  selector: `[data-brand='${brand}']`
                 },
                 filter: token => token.filePath.startsWith('device')
               },
@@ -187,13 +204,13 @@ async function run () {
     const sd = StyleDictionary.extend(glb)
       .cleanAllPlatforms()
       .buildAllPlatforms()
-  });
+  })
 
   brands.forEach(brand => {
     const sd = StyleDictionary.extend(brand)
       .cleanAllPlatforms()
       .buildAllPlatforms()
-  });
+  })
 }
 
 run()
