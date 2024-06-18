@@ -1,6 +1,6 @@
 @layer components {
     .container {
-        @apply w-full max-w-breakpoint-content mx-auto;
+        @apply w-full max-w-breakpoint-width mx-auto;
     }
     .container-fluid {
         @apply w-full;
