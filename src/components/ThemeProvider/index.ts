@@ -1,9 +1,8 @@
 import { PropsWithChildren } from 'react';
-import type { RootComponentInstance } from '@uniformdev/canvas';
+import type { ComponentParameter } from '@uniformdev/canvas';
 
 export type ThemeProviderProps = PropsWithChildren<{
-  data?: RootComponentInstance | null;
-  defaultTheme?: Types.ThemeValue | null;
+  parameters?: { [key: string]: ComponentParameter };
 }>;
 
 export * from './ThemeProvider';

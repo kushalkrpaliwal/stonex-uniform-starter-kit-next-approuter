@@ -1,31 +1,44 @@
 import { FC } from 'react';
 import classNames from 'classnames';
-import { appFonts } from '../../fonts';
-import { generateCustomTheme } from '../../utilities/theme';
 import { ThemeProviderProps } from '.';
 
-const ThemeProvider: FC<ThemeProviderProps> = ({ children, data, defaultTheme }) => {
-  const composition = data;
+import localFont from 'next/font/local';
 
-  const compositionHeader = composition?.slots?.pageHeader?.[0];
+const stonexFont = localFont({
+  src: [
+    {
+      path: '../../fonts/StonexForma/StoneXForma-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../fonts/StonexForma/StoneXForma-Italic.woff2',
+      weight: '400',
+      style: 'italic',
+    },
+    {
+      path: '../../fonts/StonexForma/StoneXForma-Bold.woff2',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: '../../fonts/StonexForma/StoneXForma-BoldItalic.woff2',
+      weight: '700',
+      style: 'italic',
+    },
+  ],
+});
 
-  const font = compositionHeader?.parameters?.primaryFont?.value as Types.SupportedFonts;
-  const currentFont = appFonts[font];
-
-  const themeName =
-    (compositionHeader?.parameters?.theme?.value as Types.ThemeValue)?.themeName || defaultTheme?.themeName;
-
-  const colors = (compositionHeader?.parameters?.theme?.value as Types.ThemeValue)?.colors || defaultTheme?.colors;
-
-  const generatedTheme = generateCustomTheme(themeName, colors);
+const ThemeProvider: FC<ThemeProviderProps> = ({ children, parameters }) => {
+  const brandName = parameters?.brand?.value?.themeName?.toLowerCase() || 'wireframe';
+  const themeName = parameters?.theme?.value || 'light';
 
   return (
-    // The way how we can set current theme
     <div
-      className={classNames('min-h-screen overflow-x-hidden flex flex-col', currentFont?.className)}
+      className={classNames('min-h-screen overflow-x-hidden flex flex-col', stonexFont?.className)}
       data-theme={themeName}
+      data-brand={brandName}
     >
-      <div dangerouslySetInnerHTML={{ __html: generatedTheme }} />
       {children}
     </div>
   );
