@@ -1,0 +1,184 @@
+composition:
+  _name: Advanced Container Pattern
+  _id: 49f54262-2de6-4bc6-9614-b11af032f20c
+  type: advancedContainer
+  parameters:
+    title:
+      type: text
+      value: AContainer
+    boxModel:
+      type: stp-box-model-editor
+      value:
+        border:
+          top: 4
+          left: 4
+          right: 4
+          bottom: 4
+        margin:
+          top: 20
+          left: 0
+          right: 0
+          bottom: 20
+        padding:
+          top: 0
+          left: 0
+          right: 0
+          bottom: 0
+    boxShadow:
+      type: stp-box-shadow-parameter
+      value: shadow-2
+    borderColor:
+      type: stp-color-parameter
+      value: 'var(--color-text-primary, #ffffff)'
+    borderRadius:
+      type: stp-border-radius-parameter
+      value: rounded-0
+    backgroundColor:
+      type: stp-color-parameter
+      value: 'var(--color-surface-background, #191919)'
+  slots:
+    content:
+      - _id: f8f67e2a-c25c-40ef-8fb5-22835bc5f0a5
+        type: grid
+        slots:
+          grid-inner:
+            - _id: d1e08856-c0eb-4c31-9ee6-dfe82ae34e00
+              type: gridItem
+              slots:
+                inner:
+                  - _id: 15412c5d-f180-406b-b54d-3447bd8169ac
+                    type: text
+                    parameters:
+                      tag:
+                        type: tp-segmented-control-parameter
+                        value: h2
+                      size:
+                        type: tp-segmented-control-parameter
+                        value: XL
+                      text:
+                        type: text
+                        value: 'Hello Hello Hello Hello Hello Hello '
+                      fontWeight:
+                        type: tp-segmented-control-parameter
+                        value: bold
+                      whiteSpace:
+                        type: tp-segmented-control-parameter
+                        value: normal
+                      letterSpacing:
+                        type: tp-segmented-control-parameter
+                        value: wider
+                  - _id: 2b903467-8541-4e5e-ae02-8ceb04deb0d7
+                    type: text
+                    parameters:
+                      size:
+                        type: tp-segmented-control-parameter
+                        value: ''
+                      text:
+                        type: text
+                        value: 'Hello Hello Hello Hello Hello Hello '
+                  - _id: 20606a48-29c9-4185-aeb8-94cf7d64ae99
+                    type: brandCta
+                    parameters:
+                      link:
+                        type: link
+                        value:
+                          path: /
+                          type: projectMapNode
+                          nodeId: 5a9c6cac-a0cd-43ca-b2df-8706b1f4ba81
+                          projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+                      label:
+                        type: text
+                        value: Brand CTA
+                      topSpacing:
+                        type: stp-spacing-parameter
+                        value:
+                          label: '20'
+                          value: var(--spacing-20, 20px)
+                      ctaParameters:
+                        type: stp-brand-cta-parameter
+                        value:
+                          size: lg
+                          className: cta-button-brand-primary
+              parameters:
+                rowSpan:
+                  type: tp-slider-parameter
+                  value: '1'
+                rowStart:
+                  type: tp-slider-parameter
+                  value: '2'
+                columnSpan:
+                  type: tp-slider-parameter
+                  value: '6'
+                columnStart:
+                  type: tp-slider-parameter
+                  value: none
+            - _id: 627f5b5c-eaf5-4226-8ee6-9e98772bb29f
+              type: gridItem
+              parameters:
+                rowSpan:
+                  type: tp-slider-parameter
+                  value: '3'
+                rowStart:
+                  type: tp-slider-parameter
+                  value: None
+                columnSpan:
+                  type: tp-slider-parameter
+                  value: '6'
+                columnStart:
+                  type: tp-slider-parameter
+                  value: '7'
+        parameters:
+          gapX:
+            type: tp-slider-parameter
+            value: large
+          gapY:
+            type: tp-slider-parameter
+            value: none
+          columnsCount:
+            type: tp-slider-parameter
+            value: '12'
+    background:
+      - _id: 5ebda4b6-194d-421d-ab28-ce69a9e5369d
+        type: image
+        parameters:
+          src:
+            type: asset
+            value:
+              - _id: 227199c5-80c5-466a-bbf4-1544e44b55e3
+                type: image
+                fields:
+                  id:
+                    type: text
+                    value: f6e7a90a-7050-42c2-8f73-d868c6fb5feb
+                  url:
+                    value: >-
+                      https://img.uniform.global/p/CxGKBnIZSlmgHW5vuemhTw/RlYkQm0eRWypM8Xs2uerPg-cup_delicious_coffee.jpg
+                    type: text
+                  file:
+                    type: file
+                    value: e041e19a-3e1e-4259-ab6a-a6d3cb67a4be
+                  size:
+                    value: 2396183
+                    type: number
+                  title:
+                    type: text
+                    value: cup_delicious_coffee.jpg
+                  width:
+                    value: 4608
+                    type: number
+                  height:
+                    value: 3072
+                    type: number
+                  mediaType:
+                    value: image/jpeg
+                    type: text
+                _source: uniform-assets
+          fill:
+            type: checkbox
+            value: true
+          objectFit:
+            type: select
+            value: cover
+created: '2024-05-30T16:30:55.341958+00:00'
+modified: '2024-05-30T16:30:55.341958+00:00'
+pattern: true

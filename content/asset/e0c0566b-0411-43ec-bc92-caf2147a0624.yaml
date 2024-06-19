@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: e0c0566b-0411-43ec-bc92-caf2147a0624
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: AboutUs-Overview-Hero-Bkg-IMG.webp
+    file:
+      type: file
+      value: 871616ff-1ab1-4388-94de-6b1626f5ae5e
+    mediaType:
+      value: image/webp
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/CxGKBnIZSlmgHW5vuemhTw/wcBmxUNNT9-HbaYWBqsEFA-AboutUs-Overview-Hero-Bkg-IMG.webp
+      type: text
+    size:
+      value: 18278
+      type: number
+    width:
+      value: 1920
+      type: number
+    height:
+      value: 816
+      type: number
+    custom: {}
+created: '2024-06-04T14:34:52.932334+00:00'
+modified: '2024-06-04T14:34:52.932334+00:00'

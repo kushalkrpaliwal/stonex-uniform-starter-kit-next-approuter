@@ -1,0 +1,9 @@
+id: 4b5c743e-fcf8-4d71-968a-2e07ae2a69fe
+name: New Page
+order: 200
+path: /new-page
+type: composition
+pathSegment: new-page
+data: {}
+compositionId: 7c703f2d-deb2-44df-96a5-ce0045e0eea4
+projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431

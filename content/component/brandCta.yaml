@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: brandCta
+name: Brand CTA
+icon: more-r
+parameters:
+  - id: label
+    name: Label
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+    localizable: true
+  - id: link
+    name: Link
+    type: link
+    helpText: ''
+    typeConfig:
+      required: true
+    localizable: true
+  - id: group_styles
+    name: Styles
+    type: group
+    typeConfig:
+      collapsed: false
+      childrenParams:
+        - ctaParameters
+  - id: ctaParameters
+    name: CTA Parameters
+    type: stp-brand-cta-parameter
+    helpText: ''
+    typeConfig: null
+    localizable: false
+  - id: f30fc068-6335-4194-a18c-eb322ef5a290
+    name: Icon
+    type: group
+    typeConfig:
+      collapsed: true
+      childrenParams:
+        - iconName
+        - rightIconPlacement
+  - id: iconName
+    name: Icon Name
+    type: text
+    helpText: >-
+      Carbon icon name in camel case, eg "CaretRight". List of icons:
+      https://carbondesignsystem.com/elements/icons/library 
+    typeConfig: null
+    localizable: true
+  - id: rightIconPlacement
+    name: Right icon placement
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+    localizable: false
+useTeamPermissions: true
+slots: []
+titleParameter: label
+canBeComposition: false
+created: '2024-05-26T00:58:09.622488+00:00'
+updated: '2024-06-17T14:12:11.725122+00:00'

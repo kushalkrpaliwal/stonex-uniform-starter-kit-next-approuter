@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 86dd4229-3df5-49aa-a8f2-f3844f28192e
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: StonexIcon.svg
+    file:
+      type: file
+      value: 58eacf4f-d0eb-438b-89d3-9ef7359818fc
+    mediaType:
+      value: image/svg+xml
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/CxGKBnIZSlmgHW5vuemhTw/l8cIYyyIR9WMeHDmYmT8Qg-StonexIcon.svg
+      type: text
+    size:
+      value: 1065
+      type: number
+    width:
+      value: 1516
+      type: number
+    height:
+      value: 1432
+      type: number
+    custom: {}
+created: '2024-06-13T15:13:16.726671+00:00'
+modified: '2024-06-13T15:13:16.726671+00:00'

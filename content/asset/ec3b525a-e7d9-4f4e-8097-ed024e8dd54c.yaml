@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: ec3b525a-e7d9-4f4e-8097-ed024e8dd54c
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: FXALL-Account-types-Mobile.webp
+    file:
+      type: file
+      value: f1b63708-e4a8-4374-9679-7245ddc15e73
+    mediaType:
+      value: image/webp
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/CxGKBnIZSlmgHW5vuemhTw/eI1uIY3QSzKA-fp5A0o28g-FXALL-Account-types-Mobile.webp
+      type: text
+    size:
+      value: 7252
+      type: number
+    width:
+      value: 699
+      type: number
+    height:
+      value: 1077
+      type: number
+    custom: {}
+created: '2024-05-31T14:02:24.687616+00:00'
+modified: '2024-05-31T14:02:24.687616+00:00'

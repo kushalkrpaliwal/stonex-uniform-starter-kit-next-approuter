@@ -1,0 +1,259 @@
+composition:
+  _name: Forex Navigation Umbrella
+  _id: 336f8f92-d280-4ed4-8dd1-87d5cd8aacc9
+  type: advancedContainer
+  variant: fluidContent
+  parameters:
+    title:
+      type: text
+      value: Navigation Umbrella
+    boxModel:
+      type: stp-box-model-editor
+      value:
+        border:
+          top: 4
+          left: 4
+          right: 4
+          bottom: 4
+        margin:
+          top: 20
+          left: 0
+          right: 0
+          bottom: 20
+        padding:
+          top: 4
+          left: 0
+          right: 0
+          bottom: 4
+    boxShadow:
+      type: stp-box-shadow-parameter
+      value: ''
+    borderColor:
+      type: stp-color-parameter
+      value: 'var(--color-blue-1000, #001433)'
+    borderRadius:
+      type: stp-border-radius-parameter
+      value: rounded-0
+    backgroundColor:
+      type: stp-color-parameter
+      value: 'var(--color-blue-1000, #001433)'
+  slots:
+    content:
+      - _id: e893e1c6-9c0d-4101-94a1-02d1010d8411
+        type: grid
+        slots:
+          grid-inner:
+            - _id: d776067c-dfe3-4bde-96cc-b1b5ae230450
+              type: gridItem
+              slots:
+                inner:
+                  - _id: a2b04889-bafc-499f-96a7-eb0c1147f65c
+                    type: navigationLink
+                    parameters:
+                      link:
+                        type: link
+                        value:
+                          path: https://www.forex.com/en-uk/
+                          type: url
+                      color:
+                        type: tp-color-palette-parameter
+                        value: primary-content
+                      title:
+                        type: text
+                        value: CFD trading
+                      hideIconBackground:
+                        type: checkbox
+                        value: true
+                    _overridability:
+                      hideLockedParameters: true
+                  - _id: 5ac97b02-b2ba-435b-ab18-7e597d69b3ad
+                    type: navigationLink
+                    parameters:
+                      link:
+                        type: link
+                        value:
+                          path: https://www.forex.com/en-uk/professional/overview/
+                          type: url
+                      color:
+                        type: tp-color-palette-parameter
+                        value: primary-content
+                      title:
+                        type: text
+                        value: Professional
+                      hideIconBackground:
+                        type: checkbox
+                        value: true
+                    _overridability:
+                      hideLockedParameters: true
+                  - _id: 61cfc8b2-006f-401b-ae3c-be2d72ccf369
+                    type: navigationLink
+                    parameters:
+                      link:
+                        type: link
+                        value:
+                          path: https://www.stonex.com/
+                          type: url
+                      color:
+                        type: tp-color-palette-parameter
+                        value: primary-content
+                      title:
+                        type: text
+                        value: Institutional
+                      hideIconBackground:
+                        type: checkbox
+                        value: true
+                    _overridability:
+                      hideLockedParameters: true
+              parameters:
+                title:
+                  type: text
+                  value: Grid Left
+                rowSpan:
+                  type: tp-slider-parameter
+                  value: '1'
+                rowStart:
+                  type: tp-slider-parameter
+                  value: None
+                columnSpan:
+                  type: tp-slider-parameter
+                  value: '1'
+                columnStart:
+                  type: tp-slider-parameter
+                  value: '1'
+              _overridability:
+                hideLockedParameters: true
+            - _id: f5af56f2-fd4b-4191-8f97-a8699c2c1e44
+              type: gridItem
+              slots:
+                inner:
+                  - _id: 3486d2b9-bdde-4cc5-afcf-b2ab91989fdb
+                    type: navigationLink
+                    parameters:
+                      icon:
+                        type: asset
+                        value:
+                          - _id: 057516e5-625c-448b-85ee-0ab9d9b69a09
+                            type: image
+                            fields:
+                              id:
+                                type: text
+                                value: 7b2d81d3-e008-4cfd-a199-8756b2a78aa2
+                              url:
+                                value: >-
+                                  https://img.uniform.global/p/CxGKBnIZSlmgHW5vuemhTw/kMw4b62iQjK_fujL-Vv3TQ-gb.svg
+                                type: text
+                              file:
+                                type: file
+                                value: 71ec3f8a-f779-404e-adad-56fae0f75e1b
+                              size:
+                                value: 837
+                                type: number
+                              title:
+                                type: text
+                                value: gb.svg
+                              width:
+                                value: 20
+                                type: number
+                              height:
+                                value: 15
+                                type: number
+                              mediaType:
+                                value: image/svg+xml
+                                type: text
+                            _source: uniform-assets
+                      link:
+                        type: link
+                        value:
+                          path: >-
+                            https://www.forex.com/en-uk/help-and-support/support/
+                          type: url
+                      color:
+                        type: tp-color-palette-parameter
+                        value: primary-content
+                      title:
+                        type: text
+                        value: Support
+                    _overridability:
+                      hideLockedParameters: true
+                  - _id: 4b0eb801-abcd-4620-bd85-bfca88513707
+                    type: navigationLink
+                    parameters:
+                      icon:
+                        type: asset
+                        value:
+                          - _id: 057516e5-625c-448b-85ee-0ab9d9b69a09
+                            type: image
+                            fields:
+                              id:
+                                type: text
+                                value: 7b2d81d3-e008-4cfd-a199-8756b2a78aa2
+                              url:
+                                value: >-
+                                  https://img.uniform.global/p/CxGKBnIZSlmgHW5vuemhTw/kMw4b62iQjK_fujL-Vv3TQ-gb.svg
+                                type: text
+                              file:
+                                type: file
+                                value: 71ec3f8a-f779-404e-adad-56fae0f75e1b
+                              size:
+                                value: 837
+                                type: number
+                              title:
+                                type: text
+                                value: gb.svg
+                              width:
+                                value: 20
+                                type: number
+                              height:
+                                value: 15
+                                type: number
+                              mediaType:
+                                value: image/svg+xml
+                                type: text
+                            _source: uniform-assets
+                      color:
+                        type: tp-color-palette-parameter
+                        value: primary-content
+                      title:
+                        type: text
+                        value: English (UK)
+                    _overridability:
+                      hideLockedParameters: true
+              parameters:
+                title:
+                  type: text
+                  value: Grid Right
+                rowSpan:
+                  type: tp-slider-parameter
+                  value: '1'
+                rowStart:
+                  type: tp-slider-parameter
+                  value: None
+                columnSpan:
+                  type: tp-slider-parameter
+                  value: '1'
+                columnStart:
+                  type: tp-slider-parameter
+                  value: '2'
+              _overridability:
+                hideLockedParameters: true
+        parameters:
+          gapX:
+            type: tp-slider-parameter
+            value: none
+          gapY:
+            type: tp-slider-parameter
+            value: none
+          title:
+            type: text
+            value: Grid
+          columnsCount:
+            type: tp-slider-parameter
+            value: '2'
+          containerVariant:
+            type: select
+            value: fluidContent
+        _overridability:
+          hideLockedParameters: true
+created: '2024-06-13T10:24:33.28176+00:00'
+modified: '2024-06-13T15:38:15.708569+00:00'
+pattern: true

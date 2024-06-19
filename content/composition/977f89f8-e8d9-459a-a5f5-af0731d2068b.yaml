@@ -1,0 +1,821 @@
+composition:
+  _name: Buttons
+  _id: 977f89f8-e8d9-459a-a5f5-af0731d2068b
+  _slug: buttons
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      value: Buttons Overview
+  slots:
+    pageHeader:
+      - _id: c0ba3b10-f118-4689-9445-d89ed88e55db
+        type: grid
+        slots:
+          grid-inner:
+            - _id: ab6a579f-3852-4a37-b811-3e945d75b361
+              type: gridItem
+              slots:
+                inner:
+                  - _id: 7d2607d5-17ad-4ce0-8c0b-332502b23281
+                    type: stonexThemePackComponent
+                    parameters:
+                      text:
+                        type: text
+                        value: Hello World
+                      color:
+                        type: stp-color-parameter
+                        value: 'var(--color-green-100, #b0dec4)'
+                      spacing:
+                        type: stp-spacing-parameter
+                        value: var(--spacing-8, 8px)
+                      headingTag:
+                        type: stp-title-style-parameter
+                        value: h1
+              parameters:
+                flexBox:
+                  type: stp-flex-box-parameter
+                  value:
+                    alignItems: items-left
+                    useFlexBox: true
+                    flexDirection: flex-row-reverse
+                    justifyContent: justify-start
+                rowSpan:
+                  type: tp-slider-parameter
+                  value: '1'
+                rowStart:
+                  type: tp-slider-parameter
+                  value: None
+                alignSelf:
+                  type: tp-segmented-control-parameter
+                  value: center
+                columnSpan:
+                  type: tp-slider-parameter
+                  value: '1'
+                columnStart:
+                  type: tp-slider-parameter
+                  value: '2'
+                justifySelf:
+                  type: tp-segmented-control-parameter
+                  value: right
+        parameters:
+          gapX:
+            type: tp-slider-parameter
+            value: none
+          gapY:
+            type: tp-slider-parameter
+            value: none
+          columnsCount:
+            type: tp-slider-parameter
+            value: '3'
+    pageContent:
+      - _id: b068a2dd-d5ea-433d-8908-8cc4a182e354
+        type: container
+        slots:
+          container-inner:
+            - _id: 24107bb5-baa0-433d-9004-c3fa0c431537
+              type: advancedContainer
+              slots:
+                content:
+                  - _id: e08b4f06-3170-4ac6-9c99-cc413eeff61f
+                    type: grid
+                    slots:
+                      grid-inner:
+                        - _id: 86443886-0441-44fb-afae-4e1d3cfccdaf
+                          type: gridItem
+                          slots:
+                            inner:
+                              - _id: 36222227-3ee6-453e-aca0-367760584bf6
+                                type: brandCta
+                                parameters:
+                                  link:
+                                    type: link
+                                    value:
+                                      path: /
+                                      type: projectMapNode
+                                      nodeId: 5a9c6cac-a0cd-43ca-b2df-8706b1f4ba81
+                                      projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+                                  label:
+                                    type: text
+                                    value: Button
+                                  ctaParameters:
+                                    type: stp-brand-cta-parameter
+                                    value:
+                                      icon: icon
+                                      size: sm
+                                      type: primary
+                                      brand: stonex
+                                      style: brand
+                                      className: cta-button-brand-primary
+                              - _id: c31c5fe5-761c-4124-a2b2-6dbf48a2f96e
+                                type: brandCta
+                                parameters:
+                                  link:
+                                    type: link
+                                    value:
+                                      path: /
+                                      type: projectMapNode
+                                      nodeId: 5a9c6cac-a0cd-43ca-b2df-8706b1f4ba81
+                                      projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+                                  label:
+                                    type: text
+                                    value: Button
+                                  ctaParameters:
+                                    type: stp-brand-cta-parameter
+                                    value:
+                                      icon: icon
+                                      size: sm
+                                      type: secondary
+                                      brand: stonex
+                                      style: brand
+                                      className: cta-button-brand-secondary
+                              - _id: 1ead24e6-04ee-43f1-9690-f5f4cb72f818
+                                type: brandCta
+                                parameters:
+                                  link:
+                                    type: link
+                                    value:
+                                      path: /
+                                      type: projectMapNode
+                                      nodeId: 5a9c6cac-a0cd-43ca-b2df-8706b1f4ba81
+                                      projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+                                  label:
+                                    type: text
+                                    value: Button
+                                  ctaParameters:
+                                    type: stp-brand-cta-parameter
+                                    value:
+                                      icon: icon
+                                      size: sm
+                                      type: tertiary
+                                      brand: stonex
+                                      style: brand
+                                      className: cta-button-brand-tertiary
+                          parameters:
+                            title:
+                              type: text
+                              value: Stonex
+                            flexBox:
+                              type: stp-flex-box-parameter
+                              value:
+                                alignItems: items-center
+                                useFlexBox: true
+                                flexDirection: flex-col
+                                justifyContent: justify-center
+                            rowSpan:
+                              type: tp-slider-parameter
+                              value: '1'
+                            rowStart:
+                              type: tp-slider-parameter
+                              value: None
+                            alignSelf:
+                              type: tp-segmented-control-parameter
+                              value: center
+                            columnSpan:
+                              type: tp-slider-parameter
+                              value: '1'
+                            columnStart:
+                              type: tp-slider-parameter
+                              value: none
+                            justifySelf:
+                              type: tp-segmented-control-parameter
+                              value: center
+                        - _id: 745a32aa-74e3-4f52-a952-5e52435f0c18
+                          type: gridItem
+                          slots:
+                            inner:
+                              - _id: 59855ee0-8ec5-4b5d-8435-93b5b8dd17ed
+                                type: brandCta
+                                parameters:
+                                  link:
+                                    type: link
+                                    value:
+                                      path: /
+                                      type: projectMapNode
+                                      nodeId: 5a9c6cac-a0cd-43ca-b2df-8706b1f4ba81
+                                      projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+                                  label:
+                                    type: text
+                                    value: Button
+                                  ctaParameters:
+                                    type: stp-brand-cta-parameter
+                                    value:
+                                      icon: icon
+                                      size: sm
+                                      type: primary
+                                      brand: stonex
+                                      style: info
+                                      className: cta-button-info-primary
+                              - _id: 25d800a1-e781-415d-9cdf-d56be44dbbd2
+                                type: brandCta
+                                parameters:
+                                  link:
+                                    type: link
+                                    value:
+                                      path: /
+                                      type: projectMapNode
+                                      nodeId: 5a9c6cac-a0cd-43ca-b2df-8706b1f4ba81
+                                      projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+                                  label:
+                                    type: text
+                                    value: Button
+                                  ctaParameters:
+                                    type: stp-brand-cta-parameter
+                                    value:
+                                      icon: icon
+                                      size: sm
+                                      type: secondary
+                                      brand: stonex
+                                      style: info
+                                      className: cta-button-info-secondary
+                              - _id: 00632349-eb3b-4d2d-9c04-1a236fd66352
+                                type: brandCta
+                                parameters:
+                                  link:
+                                    type: link
+                                    value:
+                                      path: /
+                                      type: projectMapNode
+                                      nodeId: 5a9c6cac-a0cd-43ca-b2df-8706b1f4ba81
+                                      projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+                                  label:
+                                    type: text
+                                    value: Button
+                                  ctaParameters:
+                                    type: stp-brand-cta-parameter
+                                    value:
+                                      icon: icon
+                                      size: sm
+                                      type: tertiary
+                                      brand: stonex
+                                      style: info
+                                      className: cta-button-info-tertiary
+                          parameters:
+                            title:
+                              type: text
+                              value: Info
+                            rowSpan:
+                              type: tp-slider-parameter
+                              value: '1'
+                            rowStart:
+                              type: tp-slider-parameter
+                              value: None
+                            alignSelf:
+                              type: tp-segmented-control-parameter
+                              value: center
+                            columnSpan:
+                              type: tp-slider-parameter
+                              value: '1'
+                            columnStart:
+                              type: tp-slider-parameter
+                              value: none
+                            justifySelf:
+                              type: tp-segmented-control-parameter
+                              value: center
+                        - _id: d9174670-e333-4691-a9f1-9b7b1a009ee0
+                          type: gridItem
+                          slots:
+                            inner:
+                              - _id: acd0ff85-59ba-42d9-bd02-84836e6d6d3a
+                                type: brandCta
+                                parameters:
+                                  link:
+                                    type: link
+                                    value:
+                                      path: /
+                                      type: projectMapNode
+                                      nodeId: 5a9c6cac-a0cd-43ca-b2df-8706b1f4ba81
+                                      projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+                                  label:
+                                    type: text
+                                    value: Button
+                                  iconName:
+                                    type: text
+                                    value: CaretRight
+                                  ctaParameters:
+                                    type: stp-brand-cta-parameter
+                                    value:
+                                      icon: icon
+                                      size: sm
+                                      type: primary
+                                      brand: stonex
+                                      style: success
+                                      className: cta-button-success-primary
+                                  rightIconPlacement:
+                                    type: checkbox
+                                    value: true
+                              - _id: 297fcfa7-9b26-4f50-bb96-ef44be2b1057
+                                type: brandCta
+                                parameters:
+                                  link:
+                                    type: link
+                                    value:
+                                      path: /
+                                      type: projectMapNode
+                                      nodeId: 5a9c6cac-a0cd-43ca-b2df-8706b1f4ba81
+                                      projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+                                  label:
+                                    type: text
+                                    value: Button
+                                  iconName:
+                                    type: text
+                                    value: CaretRight
+                                  ctaParameters:
+                                    type: stp-brand-cta-parameter
+                                    value:
+                                      icon: icon
+                                      size: sm
+                                      type: secondary
+                                      brand: stonex
+                                      style: success
+                                      className: cta-button-success-secondary
+                                  rightIconPlacement:
+                                    type: checkbox
+                                    value: true
+                              - _id: 70b45be8-1995-4cf8-a98c-f5b2696b7291
+                                type: brandCta
+                                parameters:
+                                  link:
+                                    type: link
+                                    value:
+                                      path: /
+                                      type: projectMapNode
+                                      nodeId: 5a9c6cac-a0cd-43ca-b2df-8706b1f4ba81
+                                      projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+                                  label:
+                                    type: text
+                                    value: Button
+                                  iconName:
+                                    type: text
+                                    value: CaretRight
+                                  ctaParameters:
+                                    type: stp-brand-cta-parameter
+                                    value:
+                                      icon: icon
+                                      size: sm
+                                      type: tertiary
+                                      brand: stonex
+                                      style: success
+                                      className: cta-button-success-tertiary
+                                  rightIconPlacement:
+                                    type: checkbox
+                                    value: true
+                          parameters:
+                            title:
+                              type: text
+                              value: Success
+                            rowSpan:
+                              type: tp-slider-parameter
+                              value: '1'
+                            rowStart:
+                              type: tp-slider-parameter
+                              value: None
+                            columnSpan:
+                              type: tp-slider-parameter
+                              value: '1'
+                            columnStart:
+                              type: tp-slider-parameter
+                              value: none
+                            justifySelf:
+                              type: tp-segmented-control-parameter
+                              value: center
+                        - _id: c667aef9-6035-4f68-b2fb-aaf2af95cab8
+                          type: gridItem
+                          slots:
+                            inner:
+                              - _id: 9b082d2a-8f9b-40aa-8ab2-0c3b15ef3428
+                                type: brandCta
+                                parameters:
+                                  link:
+                                    type: link
+                                    value:
+                                      path: /
+                                      type: projectMapNode
+                                      nodeId: 5a9c6cac-a0cd-43ca-b2df-8706b1f4ba81
+                                      projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+                                  label:
+                                    type: text
+                                    value: Button
+                                  ctaParameters:
+                                    type: stp-brand-cta-parameter
+                                    value:
+                                      icon: icon
+                                      size: sm
+                                      type: primary
+                                      brand: stonex
+                                      style: error
+                                      className: cta-button-error-primary
+                              - _id: ab84ba0b-49d8-424d-ae21-719e2c6d1c1f
+                                type: brandCta
+                                parameters:
+                                  link:
+                                    type: link
+                                    value:
+                                      path: /
+                                      type: projectMapNode
+                                      nodeId: 5a9c6cac-a0cd-43ca-b2df-8706b1f4ba81
+                                      projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+                                  label:
+                                    type: text
+                                    value: Button
+                                  ctaParameters:
+                                    type: stp-brand-cta-parameter
+                                    value:
+                                      icon: icon
+                                      size: sm
+                                      type: secondary
+                                      brand: stonex
+                                      style: error
+                                      className: cta-button-error-secondary
+                              - _id: c1d90525-7b01-462e-8208-e644cea40540
+                                type: brandCta
+                                parameters:
+                                  link:
+                                    type: link
+                                    value:
+                                      path: /
+                                      type: projectMapNode
+                                      nodeId: 5a9c6cac-a0cd-43ca-b2df-8706b1f4ba81
+                                      projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+                                  label:
+                                    type: text
+                                    value: Button
+                                  ctaParameters:
+                                    type: stp-brand-cta-parameter
+                                    value:
+                                      icon: icon
+                                      size: sm
+                                      type: tertiary
+                                      brand: stonex
+                                      style: error
+                                      className: cta-button-error-tertiary
+                          parameters:
+                            title:
+                              type: text
+                              value: 'Error '
+                            rowSpan:
+                              type: tp-slider-parameter
+                              value: '1'
+                            rowStart:
+                              type: tp-slider-parameter
+                              value: None
+                            columnSpan:
+                              type: tp-slider-parameter
+                              value: '1'
+                            columnStart:
+                              type: tp-slider-parameter
+                              value: none
+                            justifySelf:
+                              type: tp-segmented-control-parameter
+                              value: center
+                        - _id: fbefc5ec-98f4-417f-950f-6c17dd12ed70
+                          type: gridItem
+                          slots:
+                            inner:
+                              - _id: 6c6c990a-24d0-4010-8114-15e94b85af65
+                                type: brandCta
+                                parameters:
+                                  link:
+                                    type: link
+                                    value:
+                                      path: /
+                                      type: projectMapNode
+                                      nodeId: 5a9c6cac-a0cd-43ca-b2df-8706b1f4ba81
+                                      projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+                                  label:
+                                    type: text
+                                    value: Button
+                                  iconName:
+                                    type: text
+                                    value: CircleDash
+                                  ctaParameters:
+                                    type: stp-brand-cta-parameter
+                                    value:
+                                      icon: icon
+                                      size: sm
+                                      type: primary
+                                      brand: stonex
+                                      style: warning
+                                      className: cta-button-warning-primary
+                                  rightIconPlacement:
+                                    type: checkbox
+                                    value: true
+                              - _id: 472566e8-9bdd-4c3e-96e3-0b2efbac6f52
+                                type: brandCta
+                                parameters:
+                                  link:
+                                    type: link
+                                    value:
+                                      path: /
+                                      type: projectMapNode
+                                      nodeId: 5a9c6cac-a0cd-43ca-b2df-8706b1f4ba81
+                                      projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+                                  label:
+                                    type: text
+                                    value: Button
+                                  iconName:
+                                    type: text
+                                    value: CircleDash
+                                  ctaParameters:
+                                    type: stp-brand-cta-parameter
+                                    value:
+                                      icon: icon
+                                      size: sm
+                                      type: secondary
+                                      brand: stonex
+                                      style: warning
+                                      className: cta-button-warning-secondary
+                              - _id: 6876e4e6-949a-4407-99f0-890d0272b1e4
+                                type: brandCta
+                                parameters:
+                                  link:
+                                    type: link
+                                    value:
+                                      path: /
+                                      type: projectMapNode
+                                      nodeId: 5a9c6cac-a0cd-43ca-b2df-8706b1f4ba81
+                                      projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+                                  label:
+                                    type: text
+                                    value: Button
+                                  iconName:
+                                    type: text
+                                    value: CircleDash
+                                  ctaParameters:
+                                    type: stp-brand-cta-parameter
+                                    value:
+                                      icon: icon
+                                      size: sm
+                                      type: tertiary
+                                      brand: stonex
+                                      style: warning
+                                      className: cta-button-warning-tertiary
+                          parameters:
+                            title:
+                              type: text
+                              value: Warning
+                            flexBox:
+                              type: stp-flex-box-parameter
+                              value:
+                                gap: ''
+                                alignItems: items-center
+                                useFlexBox: true
+                                flexDirection: flex-col
+                                justifyContent: ''
+                            rowSpan:
+                              type: tp-slider-parameter
+                              value: '1'
+                            rowStart:
+                              type: tp-slider-parameter
+                              value: None
+                            columnSpan:
+                              type: tp-slider-parameter
+                              value: '1'
+                            columnStart:
+                              type: tp-slider-parameter
+                              value: none
+                            justifySelf:
+                              type: tp-segmented-control-parameter
+                              value: justify-self-end
+                    parameters:
+                      gapX:
+                        type: tp-slider-parameter
+                        value: medium
+                      gapY:
+                        type: tp-slider-parameter
+                        value: none
+                      title:
+                        type: text
+                        value: Buttons Grid
+                      columnsCount:
+                        type: tp-slider-parameter
+                        value: '5'
+              variant: fluidContent
+              parameters:
+                title:
+                  type: text
+                  value: Advanced Container
+                boxModel:
+                  type: stp-box-model
+                  value:
+                    border:
+                      top: 2
+                      left: 2
+                      right: 2
+                      bottom: 2
+                    margin:
+                      top: 0
+                      left: 0
+                      right: 0
+                      bottom: 0
+                    padding:
+                      top: 40
+                      left: 20
+                      right: 20
+                      bottom: 40
+                boxShadow:
+                  type: stp-box-shadow-parameter
+                  value: shadow-2
+                borderColor:
+                  type: stp-color-parameter
+                  value: 'var(--color-info-foreground-default, #aaccff)'
+                backgroundColor:
+                  type: stp-color-parameter
+                  value: 'var(--color-surface-background, #191919)'
+            - _id: e2799439-6b53-4f82-a022-33870b7dd792
+              type: advancedContainer
+              slots:
+                content:
+                  - _id: 1006d4fc-2e48-4794-9924-a8451f8515d3
+                    type: text
+                    parameters:
+                      tag:
+                        type: tp-segmented-control-parameter
+                        value: p
+                      size:
+                        type: tp-segmented-control-parameter
+                        value: 5XL
+                      text:
+                        type: text
+                        value: Forex
+                      textColor:
+                        type: stp-color-parameter
+                        value: >-
+                          var(--color-gradient-brand, linear-gradient(90deg,
+                          #12225C 0%, #0954B5 100%))
+                      fontWeight:
+                        type: tp-segmented-control-parameter
+                        value: bold
+                      whiteSpace:
+                        type: tp-segmented-control-parameter
+                        value: normal
+                      letterSpacing:
+                        type: tp-segmented-control-parameter
+                        value: ''
+                  - _id: 8a85458d-4793-44b8-927d-c4302ca06c22
+                    type: text
+                    parameters:
+                      tag:
+                        type: tp-segmented-control-parameter
+                        value: p
+                      size:
+                        type: tp-segmented-control-parameter
+                        value: 5XL
+                      text:
+                        type: text
+                        value: City Index
+                      textColor:
+                        type: stp-color-parameter
+                        value: >-
+                          var(--color-gradients-tables-retail-table,
+                          linear-gradient(270deg, #e0325c 0%, #9c0b93 50%,
+                          #4c1bb7 100%))
+                      fontWeight:
+                        type: tp-segmented-control-parameter
+                        value: bold
+                      whiteSpace:
+                        type: tp-segmented-control-parameter
+                        value: normal
+                      letterSpacing:
+                        type: tp-segmented-control-parameter
+                        value: ''
+                  - _id: 2db7241f-83b2-43ab-9870-f066b25291d5
+                    type: text
+                    parameters:
+                      tag:
+                        type: tp-segmented-control-parameter
+                        value: p
+                      size:
+                        type: tp-segmented-control-parameter
+                        value: 5XL
+                      text:
+                        type: text
+                        value: StoneX
+                      textColor:
+                        type: stp-color-parameter
+                        value: >-
+                          var(--blue-gradient, linear-gradient(270deg, #0d1775
+                          0%, #1383f4 100%))
+                      fontWeight:
+                        type: tp-segmented-control-parameter
+                        value: bold
+                      whiteSpace:
+                        type: tp-segmented-control-parameter
+                        value: normal
+                      letterSpacing:
+                        type: tp-segmented-control-parameter
+                        value: ''
+              parameters:
+                title:
+                  type: text
+                  value: Text
+                boxModel:
+                  type: stp-box-model
+                  value:
+                    border:
+                      top: 0
+                      left: 0
+                      right: 0
+                      bottom: 0
+                    margin:
+                      top: 0
+                      left: 0
+                      right: 0
+                      bottom: 0
+                    padding:
+                      top: 0
+                      left: 0
+                      right: 0
+                      bottom: 0
+        variant: fluidContent
+        parameters:
+          title:
+            type: text
+            value: Container
+          flexBox:
+            type: stp-flex-box-parameter
+            value:
+              gap: gap-xs
+              alignItems: items-center
+              useFlexBox: true
+              flexDirection: flex-col
+              justifyContent: justify-center
+          boxModel:
+            type: stp-box-model
+            value:
+              border:
+                top: 0
+                left: 0
+                right: 0
+                bottom: 0
+              margin:
+                top: 0
+                left: 0
+                right: 0
+                bottom: 0
+              padding:
+                top: 0
+                left: 0
+                right: 0
+                bottom: 0
+      - _id: 40c35692-07e5-43f0-859d-4cfa36a3759e
+        type: container
+        slots:
+          container-inner:
+            - _id: fec7f153-eb4e-4166-b8e5-4707f05e374a
+              type: text
+              parameters:
+                text:
+                  type: text
+                  value: Text
+            - _id: c5858e4a-54e3-4688-a249-0822332fef6c
+              type: text
+              parameters:
+                text:
+                  type: text
+                  value: To
+            - _id: ecafd620-a2df-485b-a024-dff0fd5fcd10
+              type: text
+              parameters:
+                text:
+                  type: text
+                  value: Test
+        parameters:
+          title:
+            type: text
+            value: Container
+          flexBox:
+            type: stp-flex-box-parameter
+            value:
+              gap: gap-xxxs
+              alignItems: items-center
+              useFlexBox: true
+              flexDirection: flex-col
+              justifyContent: justify-center
+          boxModel:
+            type: stp-box-model
+            value:
+              border:
+                top: '2'
+                left: '2'
+                right: '2'
+                bottom: '2'
+              margin:
+                top: xxxl
+                left: xxxxxxs
+                right: xxxxxxs
+                bottom: xxxxxxs
+              padding:
+                top: xxxxxxs
+                left: xxxxxxs
+                right: xxxxxxs
+                bottom: xxxxxxs
+  _dataResources:
+    CTA Card Content:
+      type: ctaCard
+      variables:
+        language: ''
+        itemsCodenames: full
+created: '2024-06-13T11:01:03.278423+00:00'
+modified: '2024-06-18T15:44:18.064812+00:00'
+pattern: false

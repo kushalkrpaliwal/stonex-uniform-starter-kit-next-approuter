@@ -1,0 +1,187 @@
+composition:
+  _name: Tims Page
+  _id: d0c5ea84-f6b5-4f76-b761-3a04b316882c
+  _slug: tims-page
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      value: ${#jptr:/CTA Card Content/item/elements/heading_options__title/value}
+  slots:
+    pageFooter:
+      - _id: 5d0581e2-c3dd-44ac-abcb-c9f18d94c42b
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: dc9eb101-0728-45ce-8767-866d91b891a8
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: 23725282-61be-484f-989e-63ed56fd3729
+        type: breadcrumbs
+        parameters:
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+      - _id: 4219d73f-db4e-4afa-8b1f-c28f4e3c4b6b
+        type: advancedContainer
+        slots:
+          content:
+            - _id: a6612762-7cc9-4203-a9b8-ae0133ed6c25
+              type: grid
+              slots:
+                grid-inner:
+                  - _id: bdabbd56-7396-472f-b3c3-8c1c5a8f603c
+                    type: gridItem
+                    slots:
+                      inner:
+                        - _id: c34af037-746a-4d40-85e4-115c033a2a65
+                          type: box
+                          _pattern: 10a5245c-fb64-419d-bdc8-89f1abec3ecd
+                        - _id: 2cb4ec78-16c5-4f71-8cfb-3351968780ce
+                          type: spacer
+                          parameters:
+                            thickness:
+                              type: tp-slider-parameter
+                              value: 20px
+                        - _id: bdd27da2-91ae-4d21-ac97-ab45087ef9d4
+                          type: button
+                          parameters:
+                            copy:
+                              type: text
+                              value: RANGE OF MARKETS
+                            link:
+                              type: link
+                              value:
+                                path: >-
+                                  https://www.forex.com/en-uk/markets-to-trade/overview/
+                                type: url
+                            style:
+                              type: tp-button-style-parameter
+                              value: primary
+                    parameters:
+                      title:
+                        type: text
+                        value: item
+                      flexBox:
+                        type: stp-flex-box-parameter
+                        value:
+                          gap: ''
+                          alignItems: ''
+                          useFlexBox: false
+                          flexDirection: flex-row
+                          justifyContent: ''
+                      rowSpan:
+                        type: tp-slider-parameter
+                        value: '1'
+                      rowStart:
+                        type: tp-slider-parameter
+                        value: None
+                      columnSpan:
+                        type: tp-slider-parameter
+                        value: '1'
+                      columnStart:
+                        type: tp-slider-parameter
+                        value: none
+              parameters:
+                gapX:
+                  type: tp-slider-parameter
+                  value: small
+                gapY:
+                  type: tp-slider-parameter
+                  value: small
+                title:
+                  type: text
+                  value: grid
+                columnsCount:
+                  type: tp-slider-parameter
+                  value: '3'
+        parameters:
+          title:
+            type: text
+            value: Container
+          boxModel:
+            type: stp-box-model
+            value:
+              border:
+                top: 0
+                left: 0
+                right: 0
+                bottom: 0
+              margin:
+                top: 0
+                left: 0
+                right: 0
+                bottom: 0
+              padding:
+                top: 0
+                left: 0
+                right: 0
+                bottom: 0
+          borderColor:
+            type: stp-color-parameter
+            value: 'var(--functional-orange-200, #fad8a3)'
+          backgroundColor:
+            type: stp-color-parameter
+            value: 'var(--color-blue-800, #003380)'
+  _dataResources:
+    CTA Card Content:
+      type: ctaCard
+      variables:
+        language: ''
+        itemsCodenames: full
+  _overrides:
+    c34af037-746a-4d40-85e4-115c033a2a65|9d795a1c-c090-4b2a-8af7-12d2312dbeb9:
+      parameters:
+        color:
+          type: tp-color-palette-parameter
+          value: primary-content
+        content:
+          type: richText
+          value:
+            root:
+              type: root
+              format: ''
+              indent: 0
+              version: 1
+              children:
+                - type: paragraph
+                  format: ''
+                  indent: 0
+                  version: 1
+                  children:
+                    - mode: normal
+                      text: "Trade thousands of markets including Amazon, GBP/USD, UK\_100, and gold."
+                      type: text
+                      style: ''
+                      detail: 0
+                      format: 0
+                      version: 1
+                  direction: ltr
+              direction: ltr
+    c34af037-746a-4d40-85e4-115c033a2a65|02c702fa-c53a-429b-8713-42e521693569|1e8815fa-ef65-4ab3-8036-75926c9a97ba:
+      parameters:
+        tag:
+          type: tp-segmented-control-parameter
+          value: h2
+        size:
+          type: tp-segmented-control-parameter
+          value: 2XL
+        text:
+          type: text
+          value: Corner the markets
+        textColor:
+          type: stp-color-parameter
+          value: 'var(--white, #fff)'
+        fontWeight:
+          type: tp-segmented-control-parameter
+          value: bold
+created: '2024-05-31T13:56:39.616764+00:00'
+modified: '2024-06-18T12:00:21.750236+00:00'
+pattern: false

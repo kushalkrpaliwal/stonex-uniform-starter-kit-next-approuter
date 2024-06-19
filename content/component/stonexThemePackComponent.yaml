@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: stonexThemePackComponent
+name: Stonex Theme Pack Component
+icon: screen
+parameters:
+  - id: text
+    name: Text
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+      multiline: true
+    localizable: true
+  - id: headingTag
+    name: Heading Tag
+    type: stp-title-style-parameter
+    helpText: ''
+    typeConfig: null
+    localizable: false
+  - id: spacing
+    name: Spacing
+    type: stp-spacing-parameter
+    helpText: ''
+    typeConfig: null
+    localizable: false
+  - id: color
+    name: Color
+    type: stp-color-parameter
+    helpText: ''
+    typeConfig: null
+    localizable: false
+useTeamPermissions: true
+slots: []
+titleParameter: text
+canBeComposition: false
+created: '2024-05-23T10:16:25.146663+00:00'
+updated: '2024-05-24T20:36:41.11796+00:00'
