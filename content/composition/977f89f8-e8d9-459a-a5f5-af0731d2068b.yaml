@@ -4,6 +4,16 @@ composition:
   _slug: buttons
   type: page
   parameters:
+    brand:
+      type: stp-set-up-theme-parameter
+      value:
+        iconUrl: >-
+          https://www.cityindex.com/en-uk/-/media/project/gain-capital/city-index/logos/city-index-brand/city-index-logo-black.png
+        themeName: cityIndex
+        themeLabel: City Index
+    theme:
+      type: tp-segmented-control-parameter
+      value: light
     pageTitle:
       type: text
       value: Buttons Overview
@@ -11,53 +21,6 @@ composition:
     pageHeader:
       - _id: c0ba3b10-f118-4689-9445-d89ed88e55db
         type: grid
-        slots:
-          grid-inner:
-            - _id: ab6a579f-3852-4a37-b811-3e945d75b361
-              type: gridItem
-              slots:
-                inner:
-                  - _id: 7d2607d5-17ad-4ce0-8c0b-332502b23281
-                    type: stonexThemePackComponent
-                    parameters:
-                      text:
-                        type: text
-                        value: Hello World
-                      color:
-                        type: stp-color-parameter
-                        value: 'var(--color-green-100, #b0dec4)'
-                      spacing:
-                        type: stp-spacing-parameter
-                        value: var(--spacing-8, 8px)
-                      headingTag:
-                        type: stp-title-style-parameter
-                        value: h1
-              parameters:
-                flexBox:
-                  type: stp-flex-box-parameter
-                  value:
-                    alignItems: items-left
-                    useFlexBox: true
-                    flexDirection: flex-row-reverse
-                    justifyContent: justify-start
-                rowSpan:
-                  type: tp-slider-parameter
-                  value: '1'
-                rowStart:
-                  type: tp-slider-parameter
-                  value: None
-                alignSelf:
-                  type: tp-segmented-control-parameter
-                  value: center
-                columnSpan:
-                  type: tp-slider-parameter
-                  value: '1'
-                columnStart:
-                  type: tp-slider-parameter
-                  value: '2'
-                justifySelf:
-                  type: tp-segmented-control-parameter
-                  value: right
         parameters:
           gapX:
             type: tp-slider-parameter
@@ -812,5 +775,5 @@ composition:
                 bottom: xxxxxxs
   _dataResources: {}
 created: '2024-06-19T12:03:55.889903+00:00'
-modified: '2024-06-19T12:06:50.715912+00:00'
+modified: '2024-06-19T16:26:32.672857+00:00'
 pattern: false

@@ -17,18 +17,6 @@ composition:
         type: header
         _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
     pageContent:
-      - _id: 23725282-61be-484f-989e-63ed56fd3729
-        type: breadcrumbs
-        parameters:
-          separator:
-            type: select
-            value: chevron
-          colorStyle:
-            type: tp-color-style-parameter
-            value: primary
-          displayRootNode:
-            type: checkbox
-            value: true
       - _id: 4219d73f-db4e-4afa-8b1f-c28f4e3c4b6b
         type: advancedContainer
         slots:
@@ -54,21 +42,29 @@ composition:
                                   thickness:
                                     type: tp-slider-parameter
                                     value: 20px
-                              - _id: bdd27da2-91ae-4d21-ac97-ab45087ef9d4
-                                type: button
+                              - _id: 09553089-9421-4ff4-9711-af70ef87da94
+                                type: brandCta
                                 parameters:
-                                  copy:
-                                    type: text
-                                    value: RANGE OF MARKETS
                                   link:
                                     type: link
                                     value:
                                       path: >-
                                         https://www.forex.com/en-uk/markets-to-trade/overview/
                                       type: url
-                                  style:
-                                    type: tp-button-style-parameter
-                                    value: primary
+                                  label:
+                                    type: text
+                                    value: Range of Markets
+                                  iconName:
+                                    type: text
+                                    value: CaretRight
+                                  ctaParameters:
+                                    type: stp-brand-cta-parameter
+                                    value:
+                                      size: lg
+                                      className: cta-button-brand-primary
+                                  rightIconPlacement:
+                                    type: checkbox
+                                    value: true
                           parameters:
                             title:
                               type: text
@@ -362,5 +358,5 @@ composition:
           type: tp-segmented-control-parameter
           value: bold
 created: '2024-05-31T13:56:39.616764+00:00'
-modified: '2024-06-19T11:55:00.394806+00:00'
+modified: '2024-06-19T13:53:32.34323+00:00'
 pattern: false

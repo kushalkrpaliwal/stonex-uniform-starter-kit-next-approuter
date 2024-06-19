@@ -1,0 +1,9 @@
+id: 2428effd-464b-42b1-b12b-11722da87cb6
+name: Test theme
+order: -100
+path: /test-theme
+type: composition
+pathSegment: test-theme
+data: {}
+compositionId: 4e340834-5e44-4591-bd5f-4be85f614850
+projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431

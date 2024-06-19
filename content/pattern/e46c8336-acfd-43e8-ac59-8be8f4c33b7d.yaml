@@ -41,7 +41,7 @@ composition:
         colors:
           - name: primary
             label: Primary
-            value: '#55493b'
+            value: '#0052ED'
           - name: primary-content
             label: Primary Content
             value: '#FFFFFF'
@@ -53,21 +53,21 @@ composition:
             value: '#000000'
           - name: accent
             label: Accent
-            value: '#F8E399'
+            value: '#DF0000'
           - name: accent-content
             label: Accent Content
-            value: '#000000'
+            value: '#FFFFFF'
           - name: info-content
             label: Info Content
-            value: '#E4E4E4'
+            value: '#99C6FF'
           - name: base-200
             label: Base 200
-            value: '#b69066'
+            value: '#6b8ff0'
           - name: base-300
             label: Base 300
-            value: '#372f26'
-        themeName: javadrip
-        themeLabel: Java Drip
+            value: '#001242'
+        themeName: custom
+        themeLabel: Custom
     favicon:
       type: asset
       value:
@@ -661,7 +661,7 @@ composition:
       syntheticGap: 'yes'
       linksAlignment: 'yes'
 created: '2024-05-22T13:26:36.270531+00:00'
-modified: '2024-06-19T11:48:36.38756+00:00'
+modified: '2024-06-19T12:18:50.385455+00:00'
 pattern: true
 previewImageUrl: >-
   https://res.cloudinary.com/uniform-demos/image/upload/v1/preview-images/UniformTheme/Header_pattern_preview_image

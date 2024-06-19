@@ -77,10 +77,15 @@ slots:
     allowAllComponents: true
     inheritAllowedComponents: false
     patternsInAllowedComponents: false
+slugSettings:
+  unique: 'no'
+  required: disabled
+  regularExpression: ''
+  regularExpressionMessage: ''
 titleParameter: title
 canBeComposition: true
 created: '2024-05-22T13:26:30.15582+00:00'
-updated: '2024-06-18T10:56:39.240056+00:00'
+updated: '2024-06-19T12:39:11.026876+00:00'
 variants:
   - id: fluidContent
     name: Fluid Content
