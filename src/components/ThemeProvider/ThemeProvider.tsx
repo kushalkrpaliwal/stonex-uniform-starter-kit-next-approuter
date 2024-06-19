@@ -30,6 +30,8 @@ const stonexFont = localFont({
 });
 
 const ThemeProvider: FC<ThemeProviderProps> = ({ children, parameters }) => {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-expect-error
   const brandName = parameters?.brand?.value?.themeName?.toLowerCase() || 'wireframe';
   const themeName = parameters?.theme?.value || 'light';
 
