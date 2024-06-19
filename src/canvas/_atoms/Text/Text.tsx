@@ -38,7 +38,6 @@ export const Text: FC<TextProps> = ({
       as={Tag}
       className={classNames(
         '!bg-clip-text',
-        'w-max',
         'text-transparent',
         getDefaultTextStyle(Tag),
         getTextSize(size),
