@@ -109,9 +109,6 @@ composition:
           titleStyle:
             type: tp-title-style-parameter
             value: h1
-          description:
-            type: text
-            value: ''
           eyebrowText:
             type: text
             value: Variant 1
@@ -861,6 +858,6 @@ composition:
           backgroundType:
             type: tp-background-type-parameter
             value: Dark
-created: '2024-04-15T10:51:42.935117+00:00'
-modified: '2024-04-15T10:51:42.935117+00:00'
+created: '2024-05-22T13:26:38.597511+00:00'
+modified: '2024-05-22T18:30:07.6026+00:00'
 pattern: false

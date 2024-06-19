@@ -48,7 +48,7 @@ composition:
                                 type: file
                                 value: 5d019bf9-dc0c-44d2-92f9-fa93cf37feb8
                               size:
-                                value: 327
+                                value: 331
                                 type: number
                               title:
                                 type: text
@@ -216,7 +216,7 @@ composition:
                                 type: file
                                 value: 8cc10310-5784-4001-b5a9-d0c1e2195878
                               size:
-                                value: 223
+                                value: 226
                                 type: number
                               title:
                                 type: text
@@ -384,7 +384,7 @@ composition:
                                 type: file
                                 value: 1fa4f424-1003-4090-9a3b-a83452a43ad6
                               size:
-                                value: 1109
+                                value: 1113
                                 type: number
                               title:
                                 type: text
@@ -552,7 +552,7 @@ composition:
                                 type: file
                                 value: 3b469cc5-2bda-45ca-9be0-631f60bdf396
                               size:
-                                value: 414
+                                value: 418
                                 type: number
                               title:
                                 type: text
@@ -701,8 +701,8 @@ composition:
       paddingBottom: 'yes'
       backgroundType: 'yes'
       containerVariant: 'yes'
-created: '2024-04-15T10:51:40.340606+00:00'
-modified: '2024-04-15T10:51:40.340606+00:00'
+created: '2024-05-22T13:26:36.017713+00:00'
+modified: '2024-05-22T13:26:36.017713+00:00'
 pattern: true
 previewImageUrl: >-
   https://res.cloudinary.com/uniform-demos/image/upload/v1/preview-images/UniformTheme/Stat_preview_image

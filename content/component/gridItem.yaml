@@ -131,6 +131,48 @@ parameters:
           value: '6'
       maxValue: 10
       minValue: 0
+  - id: alignSelf
+    name: Align Self
+    type: tp-segmented-control-parameter
+    helpText: Vertical items alignment
+    typeConfig:
+      options:
+        - label: Auto
+          value: self-auto
+        - label: Left
+          value: self-start
+        - label: Center
+          value: self-center
+        - label: Right
+          value: self-end
+        - label: Stretch
+          value: self-stretch
+    localizable: false
+  - id: justifySelf
+    name: Justify Self
+    type: tp-segmented-control-parameter
+    helpText: Horizontal items alignment
+    typeConfig:
+      options:
+        - label: Left
+          value: justify-self-start
+        - label: Center
+          value: justify-self-center
+        - label: Right
+          value: justify-self-end
+        - label: Stretch
+          value: justify-self-stretch
+        - label: Auto
+          value: justify-self-auto
+    localizable: false
+  - id: flexBox
+    name: Flex Box
+    type: stp-flex-box-parameter
+    helpText: >-
+      Use CSS FlexBox features. Ref:
+      https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    typeConfig: null
+    localizable: false
 categoryId: 19f9419d-14da-496d-a4ac-eec5010e13d7
 previewImageUrl: >-
   https://res.cloudinary.com/uniform-demos/image/upload/v1/preview-images/UniformTheme/Grid_item_preview_image
@@ -164,10 +206,14 @@ slots:
       - box
       - navigationSection
       - text
+      - brandCta
+      - stonexThemePackComponent
+      - navigationLink
+      - button
     allowAllComponents: false
     inheritAllowedComponents: false
     patternsInAllowedComponents: false
 titleParameter: title
 canBeComposition: false
-created: '2024-04-15T10:51:32.418524+00:00'
-updated: '2024-04-15T10:51:32.418524+00:00'
+created: '2024-05-22T13:26:28.565638+00:00'
+updated: '2024-06-18T11:48:01.875159+00:00'

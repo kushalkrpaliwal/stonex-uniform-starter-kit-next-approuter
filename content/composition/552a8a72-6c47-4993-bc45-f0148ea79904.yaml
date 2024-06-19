@@ -102,9 +102,9 @@ composition:
         type: footer
         _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
     pageHeader:
-      - _id: 62938edd-e33a-45c7-93a6-a2a3e16fa8d7
-        type: header
-        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+      - _id: 630580cd-a005-436e-aac1-8e0485f0bdc1
+        type: advancedContainer
+        _pattern: 336f8f92-d280-4ed4-8dd1-87d5cd8aacc9
     pageContent:
       - _id: 1f352a25-7acb-4893-a11c-f06bd45f27ab
         type: hero
@@ -186,7 +186,6 @@ composition:
             value: primary
       - _id: 7e072bd7-bbe7-4f97-8707-635f74d6ea8e
         type: callToAction
-        variant: ''
         parameters:
           title:
             type: text
@@ -228,7 +227,7 @@ composition:
                           type: file
                           value: c089d446-e3b2-4ca5-b556-88fed77a65e5
                         size:
-                          value: 1402
+                          value: 1411
                           type: number
                         title:
                           type: text
@@ -271,7 +270,7 @@ composition:
                           type: file
                           value: 7e74c65b-c100-4d3e-91ad-5e605bf70b79
                         size:
-                          value: 729
+                          value: 736
                           type: number
                         title:
                           type: text
@@ -314,7 +313,7 @@ composition:
                           type: file
                           value: 192d5d29-3c89-43fe-8357-0cead3c7b921
                         size:
-                          value: 1669
+                          value: 1677
                           type: number
                         title:
                           type: text
@@ -411,7 +410,7 @@ composition:
                           type: file
                           value: 192d5d29-3c89-43fe-8357-0cead3c7b921
                         size:
-                          value: 1669
+                          value: 1677
                           type: number
                         title:
                           type: text
@@ -455,7 +454,7 @@ composition:
                           type: file
                           value: c089d446-e3b2-4ca5-b556-88fed77a65e5
                         size:
-                          value: 1402
+                          value: 1411
                           type: number
                         title:
                           type: text
@@ -498,7 +497,7 @@ composition:
                           type: file
                           value: 7e74c65b-c100-4d3e-91ad-5e605bf70b79
                         size:
-                          value: 729
+                          value: 736
                           type: number
                         title:
                           type: text
@@ -982,6 +981,6 @@ composition:
           secondaryButtonStyle:
             type: tp-button-style-parameter
             value: link
-created: '2024-04-15T10:52:18.465479+00:00'
-modified: '2024-04-15T10:52:18.465479+00:00'
+created: '2024-05-22T13:27:14.081667+00:00'
+modified: '2024-06-13T15:30:35.391929+00:00'
 pattern: false

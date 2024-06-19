@@ -8,7 +8,7 @@ asset:
       value: icon_twocolumn.svg
     file:
       type: file
-      value: 618b2310-45b5-489f-84bc-48ca9b2d87b2
+      value: 8ebbf860-9a17-4276-911e-a957c9c766db
     mediaType:
       value: image/svg+xml
       type: text
@@ -17,7 +17,7 @@ asset:
         https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/Q8BYKWe8Tr60AU9LdQY0KA-icon_twocolumn.svg
       type: text
     size:
-      value: 1089
+      value: 1110
       type: number
     width:
       value: 165
@@ -26,5 +26,5 @@ asset:
       value: 165
       type: number
     custom: {}
-created: '2024-04-15T10:51:15.59095+00:00'
-modified: '2024-04-15T10:51:15.59095+00:00'
+created: '2024-05-22T13:26:17.116101+00:00'
+modified: '2024-05-22T13:26:17.116101+00:00'

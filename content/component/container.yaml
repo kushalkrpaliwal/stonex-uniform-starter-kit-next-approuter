@@ -16,72 +16,27 @@ parameters:
     type: group
     typeConfig:
       childrenParams:
-        - paddingBottom
         - backgroundType
-        - paddingTop
-        - marginTop
-        - marginBottom
-  - id: backgroundType
-    name: Background Type
-    type: tp-background-type-parameter
+  - id: 09d5b43b-624f-4dfb-97f3-ca8681d0fd44
+    name: Layout
+    type: group
+    typeConfig:
+      collapsed: true
+      childrenParams:
+        - flexBox
+        - boxModel
+  - id: flexBox
+    name: Flex Box
+    type: stp-flex-box-parameter
     helpText: ''
     typeConfig: null
-  - id: paddingTop
-    name: Padding Top
-    type: select
+    localizable: false
+  - id: boxModel
+    name: Box Model
+    type: stp-box-model
     helpText: ''
-    typeConfig:
-      options:
-        - text: Small
-          value: Small
-        - text: Medium
-          value: Medium
-        - text: Large
-          value: Large
-        - text: None
-          value: None
-  - id: paddingBottom
-    name: Padding Bottom
-    type: select
-    helpText: ''
-    typeConfig:
-      options:
-        - text: Small
-          value: Small
-        - text: Medium
-          value: Medium
-        - text: Large
-          value: Large
-        - text: None
-          value: None
-  - id: marginTop
-    name: Margin Top
-    type: select
-    helpText: ''
-    typeConfig:
-      options:
-        - text: Small
-          value: Small
-        - text: Medium
-          value: Medium
-        - text: Large
-          value: Large
-        - text: None
-          value: None
-  - id: marginBottom
-    name: Margin Bottom
-    type: select
-    helpText: ''
-    typeConfig:
-      options:
-        - text: Small
-          value: Small
-        - text: Medium
-          value: Medium
-        - text: Large
-          value: Large
-        - text: None
-          value: None
+    typeConfig: null
+    localizable: false
 categoryId: 19f9419d-14da-496d-a4ac-eec5010e13d7
 previewImageUrl: >-
   https://res.cloudinary.com/uniform-demos/image/upload/v1/preview-images/UniformTheme/Container_preview_image
@@ -95,10 +50,8 @@ slots:
     patternsInAllowedComponents: false
 titleParameter: title
 canBeComposition: false
-created: '2024-04-15T10:51:34.087765+00:00'
-updated: '2024-04-15T10:51:34.087765+00:00'
+created: '2024-05-22T13:26:30.111774+00:00'
+updated: '2024-06-18T11:31:10.505369+00:00'
 variants:
-  - id: backgroundInContainer
-    name: Background In Container
   - id: fluidContent
-    name: Fluid Content
+    name: Full Width Content

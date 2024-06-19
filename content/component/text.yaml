@@ -71,20 +71,6 @@ parameters:
           value: wider
       defaultValue: ''
     localizable: false
-  - id: color
-    name: Color
-    type: tp-color-palette-parameter
-    helpText: ''
-    typeConfig:
-      defaultColorHex: '#000'
-      allowThemeColors:
-        - primary
-        - primary-content
-        - secondary-content
-        - accent
-      isAllowCustomColor: false
-      isShowAdvancedSettings: true
-    localizable: false
   - id: group_advanced
     name: Advanced Settings
     type: group
@@ -121,6 +107,20 @@ parameters:
           value: '700'
       defaultValue: normal
     localizable: false
+  - id: ccfedb91-2c12-4166-a20b-c0266c25e8ba
+    name: Stonex Custom Parameters
+    type: group
+    typeConfig:
+      collapsed: true
+      childrenParams:
+        - textCustomColor
+        - textColor
+  - id: textColor
+    name: Text Color
+    type: stp-color-parameter
+    helpText: supports gradients
+    typeConfig: null
+    localizable: false
 categoryId: 94a7a423-8c09-4264-8495-c562c17d811e
 previewImageUrl: >-
   https://res.cloudinary.com/uniform-demos/image/upload/v1/preview-images/UniformTheme/Text_preview_image
@@ -128,5 +128,5 @@ useTeamPermissions: true
 slots: []
 titleParameter: text
 canBeComposition: false
-created: '2024-04-15T10:51:34.510534+00:00'
-updated: '2024-04-15T10:51:34.510534+00:00'
+created: '2024-05-22T13:26:30.485875+00:00'
+updated: '2024-06-13T15:21:42.994707+00:00'

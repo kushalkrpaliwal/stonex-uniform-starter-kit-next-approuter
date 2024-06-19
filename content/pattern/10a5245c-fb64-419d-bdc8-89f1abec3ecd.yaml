@@ -17,6 +17,9 @@ composition:
           text:
             type: text
             value: Title
+          textColor:
+            type: stp-color-parameter
+            value: 'var(--color-neutral-1000, #191919)'
           fontWeight:
             type: tp-segmented-control-parameter
             value: normal
@@ -33,6 +36,7 @@ composition:
             text: 'yes'
             color: 'yes'
             style: 'yes'
+            textColor: 'yes'
             fontWeight: 'yes'
             whiteSpace: 'yes'
             letterSpacing: 'yes'
@@ -121,8 +125,15 @@ composition:
             color: 'yes'
             style: 'yes'
             content: 'yes'
-created: '2024-04-15T10:51:36.380362+00:00'
-modified: '2024-04-15T10:51:36.380362+00:00'
+  _overridability:
+    parameters:
+      display: 'yes'
+      textAlign: 'yes'
+      alignItems: 'yes'
+      flexDirection: 'yes'
+      justifyContent: 'yes'
+created: '2024-05-22T13:26:32.070594+00:00'
+modified: '2024-06-18T11:44:48.506124+00:00'
 pattern: true
 previewImageUrl: >-
   https://res.cloudinary.com/uniform-demos/image/upload/v1/preview-images/UniformTheme/Content_block_rich_text_preview_image

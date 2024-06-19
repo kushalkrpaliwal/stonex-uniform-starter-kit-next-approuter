@@ -6,33 +6,33 @@ composition:
     logo:
       type: asset
       value:
-        - _id: 2df79d7e-d4b4-4bb2-9b86-82a4d4ed9d96
+        - _id: 8da1e2bd-86ba-4167-a904-826abe4bc6ab
           type: image
           fields:
             id:
               type: text
-              value: 89401cb5-7432-4abb-ab3d-0c58a98e7737
+              value: 2527c75f-fbdb-4f19-8a46-f9d294a7a298
             url:
               value: >-
-                https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/E9EN9RpHRhq0IrCbqv7mGQ-uniform_csk_logo.png
+                https://img.uniform.global/p/CxGKBnIZSlmgHW5vuemhTw/ZumD1CX3SVOzamdp94fPzQ-StonexLogo.svg
               type: text
             file:
               type: file
-              value: 9505ad00-f1c8-466b-93bc-22da4374d7f5
+              value: 1be9dd33-a727-478a-9edb-af26da8ea418
             size:
-              value: 6041
+              value: 3813
               type: number
             title:
               type: text
-              value: uniform_csk_logo.png
+              value: StonexLogo.svg
             width:
-              value: 432
+              value: 1531
               type: number
             height:
-              value: 79
+              value: 335
               type: number
             mediaType:
-              value: image/png
+              value: image/svg+xml
               type: text
           _source: uniform-assets
     theme:
@@ -41,7 +41,7 @@ composition:
         colors:
           - name: primary
             label: Primary
-            value: '#0052ED'
+            value: '#55493b'
           - name: primary-content
             label: Primary Content
             value: '#FFFFFF'
@@ -53,51 +53,51 @@ composition:
             value: '#000000'
           - name: accent
             label: Accent
-            value: '#DF0000'
+            value: '#F8E399'
           - name: accent-content
             label: Accent Content
-            value: '#FFFFFF'
+            value: '#000000'
           - name: info-content
             label: Info Content
-            value: '#99C6FF'
+            value: '#E4E4E4'
           - name: base-200
             label: Base 200
-            value: '#6b8ff0'
+            value: '#b69066'
           - name: base-300
             label: Base 300
-            value: '#001242'
-        themeName: uniform
-        themeLabel: Uniform
+            value: '#372f26'
+        themeName: javadrip
+        themeLabel: Java Drip
     favicon:
       type: asset
       value:
-        - _id: 27a489d8-7e54-4b23-ba0a-4e7bc33c4712
+        - _id: cc714b7d-5342-4ed4-8cfc-9d9259168a99
           type: image
           fields:
             id:
               type: text
-              value: 88505c93-6df6-4dbd-8ecb-d178f7f2341f
+              value: 86dd4229-3df5-49aa-a8f2-f3844f28192e
             url:
               value: >-
-                https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/uWCsHGIDRSON2KrD9FUEwQ-favicon.png
+                https://img.uniform.global/p/CxGKBnIZSlmgHW5vuemhTw/l8cIYyyIR9WMeHDmYmT8Qg-StonexIcon.svg
               type: text
             file:
               type: file
-              value: 1d1135b3-cfed-4513-baf3-a106925f7975
+              value: 58eacf4f-d0eb-438b-89d3-9ef7359818fc
             size:
-              value: 1676
+              value: 1065
               type: number
             title:
               type: text
-              value: favicon.png
+              value: StonexIcon.svg
             width:
-              value: 32
+              value: 1516
               type: number
             height:
-              value: 32
+              value: 1432
               type: number
             mediaType:
-              value: image/png
+              value: image/svg+xml
               type: text
           _source: uniform-assets
     primaryFont:
@@ -592,7 +592,7 @@ composition:
                     type: file
                     value: a7e2a12d-7ee3-4250-a44d-aa1289aa8d1c
                   size:
-                    value: 7943
+                    value: 7952
                     type: number
                   title:
                     type: text
@@ -632,7 +632,7 @@ composition:
                     type: file
                     value: 9a9e288a-69a0-43f5-b8c9-68076300b0b4
                   size:
-                    value: 1325
+                    value: 1328
                     type: number
                   title:
                     type: text
@@ -655,8 +655,8 @@ composition:
   _overridability:
     parameters:
       syntheticGap: 'yes'
-created: '2024-04-15T10:51:40.427952+00:00'
-modified: '2024-04-15T10:51:40.427952+00:00'
+created: '2024-05-22T13:26:36.270531+00:00'
+modified: '2024-06-13T15:13:21.899094+00:00'
 pattern: true
 previewImageUrl: >-
   https://res.cloudinary.com/uniform-demos/image/upload/v1/preview-images/UniformTheme/Header_pattern_preview_image

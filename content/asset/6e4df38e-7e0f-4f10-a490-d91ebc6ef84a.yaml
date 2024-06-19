@@ -8,7 +8,7 @@ asset:
       value: storybook_icon.svg
     file:
       type: file
-      value: 5c744134-da10-451d-87ea-37ff950cf20a
+      value: 5dc79d31-d52a-46db-bc80-a49bf14baecf
     mediaType:
       value: image/svg+xml
       type: text
@@ -17,7 +17,7 @@ asset:
         https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/x4JdqM-TSlaWeAgiV41-ww-storybook_icon.svg
       type: text
     size:
-      value: 7943
+      value: 7952
       type: number
     width:
       value: 38
@@ -26,5 +26,5 @@ asset:
       value: 38
       type: number
     custom: {}
-created: '2024-04-15T10:51:13.913503+00:00'
-modified: '2024-04-15T10:51:13.913503+00:00'
+created: '2024-05-22T13:26:14.989904+00:00'
+modified: '2024-05-22T13:26:14.989904+00:00'
