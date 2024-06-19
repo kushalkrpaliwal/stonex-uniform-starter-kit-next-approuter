@@ -8,13 +8,13 @@ asset:
       value: person_photo_3.jpg
     file:
       type: file
-      value: 2c8f1271-074a-43ba-a830-6f75a35694f8
+      value: 2d1755b4-c136-4d95-93b1-2e1c114fdeda
     mediaType:
       value: image/jpeg
       type: text
     url:
       value: >-
-        https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/yc-69j_3QjGIRpTijVSBSg-person_photo_3.jpg
+        https://img.uniform.global/p/CxGKBnIZSlmgHW5vuemhTw/a0lFeM0zS4WeoubQqffzVA-person_photo_3.jpg
       type: text
     size:
       value: 5865
@@ -26,5 +26,5 @@ asset:
       value: 256
       type: number
     custom: {}
-created: '2024-04-15T10:51:12.726423+00:00'
-modified: '2024-04-15T10:51:12.726423+00:00'
+created: '2024-05-22T13:26:13.863566+00:00'
+modified: '2024-05-22T13:26:13.863566+00:00'

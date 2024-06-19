@@ -8,13 +8,13 @@ asset:
       value: rectangle.webp
     file:
       type: file
-      value: 47f256ee-fb40-49a3-a36c-38a6c22ba625
+      value: 8564f9c8-d250-4698-bf0c-a22cddbe98b7
     mediaType:
       value: image/webp
       type: text
     url:
       value: >-
-        https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/lcT5ckpLRTusLp927yStQQ-rectangle.webp
+        https://img.uniform.global/p/CxGKBnIZSlmgHW5vuemhTw/tptLi6q7RpGU8TdvnV1J9Q-rectangle.webp
       type: text
     size:
       value: 49092
@@ -26,5 +26,5 @@ asset:
       value: 689
       type: number
     custom: {}
-created: '2024-04-15T10:51:14.273193+00:00'
-modified: '2024-04-15T10:51:14.273193+00:00'
+created: '2024-05-22T13:26:11.715061+00:00'
+modified: '2024-05-22T13:26:11.715061+00:00'

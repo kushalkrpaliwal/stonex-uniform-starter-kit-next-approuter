@@ -810,12 +810,7 @@ composition:
                 left: xxxxxxs
                 right: xxxxxxs
                 bottom: xxxxxxs
-  _dataResources:
-    CTA Card Content:
-      type: ctaCard
-      variables:
-        language: ''
-        itemsCodenames: full
-created: '2024-06-13T11:01:03.278423+00:00'
-modified: '2024-06-18T15:44:18.064812+00:00'
+  _dataResources: {}
+created: '2024-06-19T12:03:55.889903+00:00'
+modified: '2024-06-19T12:06:50.715912+00:00'
 pattern: false

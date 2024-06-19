@@ -8,13 +8,13 @@ asset:
       value: icon_cardblock_w.svg
     file:
       type: file
-      value: f79d0bcd-ed22-4934-bc6d-3d7cfb1a83ee
+      value: 45e01e97-6764-4df8-8cad-a365f6729935
     mediaType:
       value: image/svg+xml
       type: text
     url:
       value: >-
-        https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/3_r8EiZgRdWNzrURMIzHzA-icon_cardblock_w.svg
+        https://img.uniform.global/p/CxGKBnIZSlmgHW5vuemhTw/1FtmAHGTQymV8KD5mgaM4g-icon_cardblock_w.svg
       type: text
     size:
       value: 2584
@@ -26,5 +26,5 @@ asset:
       value: 220
       type: number
     custom: {}
-created: '2024-04-15T10:51:13.040892+00:00'
-modified: '2024-04-15T10:51:13.040892+00:00'
+created: '2024-05-22T13:26:13.036735+00:00'
+modified: '2024-05-22T13:26:13.036735+00:00'

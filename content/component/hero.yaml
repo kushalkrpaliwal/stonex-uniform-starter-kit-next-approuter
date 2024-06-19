@@ -352,8 +352,8 @@ useTeamPermissions: true
 slots: []
 titleParameter: title
 canBeComposition: false
-created: '2024-04-15T10:51:34.092979+00:00'
-updated: '2024-04-15T10:51:34.092979+00:00'
+created: '2024-05-22T13:26:28.682715+00:00'
+updated: '2024-05-22T13:26:28.682715+00:00'
 variants:
   - id: imageLeft
     name: Image Left

@@ -8,13 +8,13 @@ asset:
       value: cookie_icon.svg
     file:
       type: file
-      value: 6e2c92d2-b02b-4094-8c3b-0399493f12e6
+      value: 36a560a2-3fdf-48af-9195-27c1567a7c4f
     mediaType:
       value: image/svg+xml
       type: text
     url:
       value: >-
-        https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/tC1DLe5jTM6qZx-1PKm5og-cookie_icon.svg
+        https://img.uniform.global/p/CxGKBnIZSlmgHW5vuemhTw/iU2wMjaKQ3Gurb_dCb504A-cookie_icon.svg
       type: text
     size:
       value: 3617
@@ -26,5 +26,5 @@ asset:
       value: 59
       type: number
     custom: {}
-created: '2024-04-15T10:51:16.04509+00:00'
-modified: '2024-04-15T10:51:16.04509+00:00'
+created: '2024-05-22T13:26:17.722368+00:00'
+modified: '2024-05-22T13:26:17.722368+00:00'

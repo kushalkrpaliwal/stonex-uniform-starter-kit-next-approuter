@@ -8,13 +8,13 @@ asset:
       value: news-paper-svgrepo-com.svg
     file:
       type: file
-      value: 11d5cb3c-f6d9-4db1-be11-ebb01fbba151
+      value: 787fd3e6-9c92-4f28-b4ec-9a49b801562b
     mediaType:
       value: image/svg+xml
       type: text
     url:
       value: >-
-        https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/xjIvJR73QPCnOIpDKzKdyw-news-paper-svgrepo-com.svg
+        https://img.uniform.global/p/CxGKBnIZSlmgHW5vuemhTw/2JrQbvziT7-amfM30x-Bhg-news-paper-svgrepo-com.svg
       type: text
     size:
       value: 1181
@@ -26,5 +26,5 @@ asset:
       value: 800
       type: number
     custom: {}
-created: '2024-04-15T10:51:13.65404+00:00'
-modified: '2024-04-15T10:51:13.65404+00:00'
+created: '2024-05-22T13:26:13.933879+00:00'
+modified: '2024-05-22T13:26:13.933879+00:00'

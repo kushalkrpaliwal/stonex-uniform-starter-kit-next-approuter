@@ -8,13 +8,13 @@ asset:
       value: cervello_di_caffe_1.jpg
     file:
       type: file
-      value: 66b4c42a-5899-449d-84ad-1278a4f5df09
+      value: 3fb51475-a18e-461b-9f36-1a176a1a8f5f
     mediaType:
       value: image/jpeg
       type: text
     url:
       value: >-
-        https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/HSVI8bt5TtCGxNSb4hZh6Q-cervello_di_caffe_1.jpg
+        https://img.uniform.global/p/CxGKBnIZSlmgHW5vuemhTw/LtLL23XqQC6q43r9hcsAGA-cervello_di_caffe_1.jpg
       type: text
     size:
       value: 113554
@@ -26,5 +26,5 @@ asset:
       value: 987
       type: number
     custom: {}
-created: '2024-04-15T10:51:16.04713+00:00'
-modified: '2024-04-15T10:51:16.04713+00:00'
+created: '2024-05-22T13:26:18.310449+00:00'
+modified: '2024-05-22T13:26:18.310449+00:00'

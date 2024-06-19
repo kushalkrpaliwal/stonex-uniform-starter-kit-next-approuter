@@ -16,8 +16,8 @@ slots:
     inheritAllowedComponents: true
     patternsInAllowedComponents: false
 canBeComposition: false
-created: '2024-04-15T10:51:34.177936+00:00'
-updated: '2024-04-15T10:51:34.177936+00:00'
+created: '2024-05-22T13:26:27.766121+00:00'
+updated: '2024-05-22T13:26:27.766121+00:00'
 variants:
   - id: imageGallery
     name: Image Gallery

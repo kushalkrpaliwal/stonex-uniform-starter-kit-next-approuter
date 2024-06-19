@@ -8,13 +8,13 @@ asset:
       value: cup_delicious_coffee.jpg
     file:
       type: file
-      value: 48e02cde-eca2-4050-9be4-ae1e1c9cdf30
+      value: e041e19a-3e1e-4259-ab6a-a6d3cb67a4be
     mediaType:
       value: image/jpeg
       type: text
     url:
       value: >-
-        https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/pWtg6AziRKmCUkKSiusqKQ-cup_delicious_coffee.jpg
+        https://img.uniform.global/p/CxGKBnIZSlmgHW5vuemhTw/RlYkQm0eRWypM8Xs2uerPg-cup_delicious_coffee.jpg
       type: text
     size:
       value: 2396183
@@ -26,5 +26,5 @@ asset:
       value: 3072
       type: number
     custom: {}
-created: '2024-04-15T10:51:16.665721+00:00'
-modified: '2024-04-15T10:51:16.665721+00:00'
+created: '2024-05-22T13:26:17.933582+00:00'
+modified: '2024-05-22T13:26:17.933582+00:00'

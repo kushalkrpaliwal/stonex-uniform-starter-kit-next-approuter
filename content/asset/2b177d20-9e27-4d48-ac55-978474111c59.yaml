@@ -8,13 +8,13 @@ asset:
       value: espressoGPT_image_1.jpg
     file:
       type: file
-      value: ce8d6169-6e96-4672-8ba3-1374c1fde210
+      value: 45356f2a-ee96-4661-b753-022e52b917f2
     mediaType:
       value: image/jpeg
       type: text
     url:
       value: >-
-        https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/ssNzkw8eTZaT9BfNhLDXJw-espressoGPT_image_1.jpg
+        https://img.uniform.global/p/CxGKBnIZSlmgHW5vuemhTw/PaBeofEpQpa4wUisYadxcg-espressoGPT_image_1.jpg
       type: text
     size:
       value: 123117
@@ -26,5 +26,5 @@ asset:
       value: 960
       type: number
     custom: {}
-created: '2024-04-15T10:51:14.972549+00:00'
-modified: '2024-04-15T10:51:14.972549+00:00'
+created: '2024-05-22T13:26:12.333999+00:00'
+modified: '2024-05-22T13:26:12.333999+00:00'

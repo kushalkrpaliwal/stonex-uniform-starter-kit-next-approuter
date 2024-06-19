@@ -6,7 +6,7 @@ composition:
   parameters:
     pageTitle:
       type: text
-      value: ${#jptr:/CTA Card Content/item/elements/heading_options__title/value}
+      value: Tims Page
   slots:
     pageFooter:
       - _id: 5d0581e2-c3dd-44ac-abcb-c9f18d94c42b
@@ -33,75 +33,186 @@ composition:
         type: advancedContainer
         slots:
           content:
-            - _id: a6612762-7cc9-4203-a9b8-ae0133ed6c25
-              type: grid
+            - _id: d40edd52-3dca-4b59-a9dc-a899499836fe
+              type: container
               slots:
-                grid-inner:
-                  - _id: bdabbd56-7396-472f-b3c3-8c1c5a8f603c
-                    type: gridItem
+                container-inner:
+                  - _id: a6612762-7cc9-4203-a9b8-ae0133ed6c25
+                    type: grid
                     slots:
-                      inner:
-                        - _id: c34af037-746a-4d40-85e4-115c033a2a65
-                          type: box
-                          _pattern: 10a5245c-fb64-419d-bdc8-89f1abec3ecd
-                        - _id: 2cb4ec78-16c5-4f71-8cfb-3351968780ce
-                          type: spacer
+                      grid-inner:
+                        - _id: bdabbd56-7396-472f-b3c3-8c1c5a8f603c
+                          type: gridItem
+                          slots:
+                            inner:
+                              - _id: c34af037-746a-4d40-85e4-115c033a2a65
+                                type: box
+                                _pattern: 10a5245c-fb64-419d-bdc8-89f1abec3ecd
+                              - _id: 2cb4ec78-16c5-4f71-8cfb-3351968780ce
+                                type: spacer
+                                parameters:
+                                  thickness:
+                                    type: tp-slider-parameter
+                                    value: 20px
+                              - _id: bdd27da2-91ae-4d21-ac97-ab45087ef9d4
+                                type: button
+                                parameters:
+                                  copy:
+                                    type: text
+                                    value: RANGE OF MARKETS
+                                  link:
+                                    type: link
+                                    value:
+                                      path: >-
+                                        https://www.forex.com/en-uk/markets-to-trade/overview/
+                                      type: url
+                                  style:
+                                    type: tp-button-style-parameter
+                                    value: primary
                           parameters:
-                            thickness:
-                              type: tp-slider-parameter
-                              value: 20px
-                        - _id: bdd27da2-91ae-4d21-ac97-ab45087ef9d4
-                          type: button
-                          parameters:
-                            copy:
+                            title:
                               type: text
-                              value: RANGE OF MARKETS
-                            link:
-                              type: link
+                              value: item
+                            flexBox:
+                              type: stp-flex-box-parameter
                               value:
-                                path: >-
-                                  https://www.forex.com/en-uk/markets-to-trade/overview/
-                                type: url
-                            style:
-                              type: tp-button-style-parameter
-                              value: primary
+                                gap: gap-xxxs
+                                alignItems: items-start
+                                useFlexBox: true
+                                flexDirection: flex-col
+                                justifyContent: justify-center
+                            rowSpan:
+                              type: tp-slider-parameter
+                              value: '1'
+                            rowStart:
+                              type: tp-slider-parameter
+                              value: None
+                            alignSelf:
+                              type: tp-segmented-control-parameter
+                              value: self-auto
+                            columnSpan:
+                              type: tp-slider-parameter
+                              value: '1'
+                            columnStart:
+                              type: tp-slider-parameter
+                              value: '1'
+                            justifySelf:
+                              type: tp-segmented-control-parameter
+                              value: justify-self-auto
+                        - _id: 9851006e-7143-4f72-ac6d-e19f59ca3d01
+                          type: gridItem
+                          slots:
+                            inner:
+                              - _id: c51dd06f-d74f-497e-86f7-2ab1265d4a88
+                                type: image
+                                parameters:
+                                  src:
+                                    type: asset
+                                    value:
+                                      - _id: f4ed674b-879a-47d9-9150-c13c6a047f37
+                                        type: image
+                                        fields:
+                                          id:
+                                            type: text
+                                            value: 355d2c92-5aac-40c2-b9cb-cf921ec86d25
+                                          url:
+                                            value: >-
+                                              https://img.uniform.global/p/CxGKBnIZSlmgHW5vuemhTw/w8SQYcGjSrWYK5JE7sFXhQ-Platforms-Overview-StaticHero-Compress.webp
+                                            type: text
+                                          file:
+                                            type: file
+                                            value: 41ddd31c-101b-4012-9421-84f1181c49ae
+                                          size:
+                                            value: 38376
+                                            type: number
+                                          title:
+                                            type: text
+                                            value: >-
+                                              Platforms-Overview-StaticHero-Compress.webp
+                                          width:
+                                            value: 832
+                                            type: number
+                                          height:
+                                            value: 550
+                                            type: number
+                                          mediaType:
+                                            value: image/webp
+                                            type: text
+                                        _source: uniform-assets
+                                  objectFit:
+                                    type: select
+                                    value: cover
+                                  borderRadius:
+                                    type: tp-slider-parameter
+                                    value: none
+                          parameters:
+                            title:
+                              type: text
+                              value: img
+                            flexBox:
+                              type: stp-flex-box-parameter
+                              value:
+                                gap: ''
+                                alignItems: ''
+                                useFlexBox: false
+                                flexDirection: flex-row
+                                justifyContent: ''
+                            rowSpan:
+                              type: tp-slider-parameter
+                              value: '1'
+                            rowStart:
+                              type: tp-slider-parameter
+                              value: None
+                            columnSpan:
+                              type: tp-slider-parameter
+                              value: '1'
+                            columnStart:
+                              type: tp-slider-parameter
+                              value: '2'
                     parameters:
+                      gapX:
+                        type: tp-slider-parameter
+                        value: small
+                      gapY:
+                        type: tp-slider-parameter
+                        value: small
                       title:
                         type: text
-                        value: item
-                      flexBox:
-                        type: stp-flex-box-parameter
-                        value:
-                          gap: ''
-                          alignItems: ''
-                          useFlexBox: false
-                          flexDirection: flex-row
-                          justifyContent: ''
-                      rowSpan:
+                        value: grid
+                      columnsCount:
                         type: tp-slider-parameter
-                        value: '1'
-                      rowStart:
-                        type: tp-slider-parameter
-                        value: None
-                      columnSpan:
-                        type: tp-slider-parameter
-                        value: '1'
-                      columnStart:
-                        type: tp-slider-parameter
-                        value: none
+                        value: '2'
               parameters:
-                gapX:
-                  type: tp-slider-parameter
-                  value: small
-                gapY:
-                  type: tp-slider-parameter
-                  value: small
                 title:
                   type: text
-                  value: grid
-                columnsCount:
-                  type: tp-slider-parameter
-                  value: '3'
+                  value: Container
+                flexBox:
+                  type: stp-flex-box-parameter
+                  value:
+                    gap: gap-xxxxs
+                    alignItems: ''
+                    useFlexBox: true
+                    flexDirection: flex-row
+                    justifyContent: justify-center
+                boxModel:
+                  type: stp-box-model
+                  value:
+                    border:
+                      top: ''
+                      left: ''
+                      right: ''
+                      bottom: ''
+                    margin:
+                      top: md
+                      left: ''
+                      right: ''
+                      bottom: md
+                    padding:
+                      top: ''
+                      left: ''
+                      right: ''
+                      bottom: ''
+        variant: fluidContent
         parameters:
           title:
             type: text
@@ -110,10 +221,10 @@ composition:
             type: stp-box-model
             value:
               border:
-                top: 0
-                left: 0
-                right: 0
-                bottom: 0
+                top: None
+                left: None
+                right: None
+                bottom: None
               margin:
                 top: 0
                 left: 0
@@ -124,19 +235,87 @@ composition:
                 left: 0
                 right: 0
                 bottom: 0
+          boxShadow:
+            type: stp-box-shadow-parameter
+            value: ''
           borderColor:
             type: stp-color-parameter
             value: 'var(--functional-orange-200, #fad8a3)'
+          borderRadius:
+            type: stp-border-radius-parameter
+            value: ''
           backgroundColor:
             type: stp-color-parameter
-            value: 'var(--color-blue-800, #003380)'
-  _dataResources:
-    CTA Card Content:
-      type: ctaCard
-      variables:
-        language: ''
-        itemsCodenames: full
+            value: 'var(--color-blue-900, #002255)'
+  _dataResources: {}
   _overrides:
+    dc9eb101-0728-45ce-8767-866d91b891a8:
+      parameters:
+        logo:
+          type: asset
+          value:
+            - _id: 431c96e6-d29c-4623-9c8d-0f87955f9bfa
+              type: image
+              fields:
+                id:
+                  type: text
+                  value: 4612b652-1955-4173-a60e-9f116b854ce7
+                url:
+                  type: text
+                  value: >-
+                    https://img.uniform.global/p/CxGKBnIZSlmgHW5vuemhTw/Dp1ewva-RpC0DucnjWL5zQ-FX_Logo_LightMode.svg
+                file:
+                  type: file
+                  value: 8db1faba-99b1-40ae-8842-d43b52b28939
+                size:
+                  type: number
+                  value: 2496
+                title:
+                  type: text
+                  value: FX_Logo_LightMode.svg
+                width:
+                  type: number
+                  value: 300
+                height:
+                  type: number
+                  value: 106
+                mediaType:
+                  type: text
+                  value: image/svg+xml
+              _source: uniform-assets
+        theme:
+          type: tp-set-up-theme-parameter
+          value:
+            colors:
+              - name: primary
+                label: Primary
+                value: '#0052ED'
+              - name: primary-content
+                label: Primary Content
+                value: '#FFFFFF'
+              - name: secondary
+                label: Secondary
+                value: '#ffffff'
+              - name: secondary-content
+                label: Secondary Content
+                value: '#000000'
+              - name: accent
+                label: Accent
+                value: '#DF0000'
+              - name: accent-content
+                label: Accent Content
+                value: '#FFFFFF'
+              - name: info-content
+                label: Info Content
+                value: '#99C6FF'
+              - name: base-200
+                label: Base 200
+                value: '#6b8ff0'
+              - name: base-300
+                label: Base 300
+                value: '#001242'
+            themeName: custom
+            themeLabel: Custom
     c34af037-746a-4d40-85e4-115c033a2a65|9d795a1c-c090-4b2a-8af7-12d2312dbeb9:
       parameters:
         color:
@@ -183,5 +362,5 @@ composition:
           type: tp-segmented-control-parameter
           value: bold
 created: '2024-05-31T13:56:39.616764+00:00'
-modified: '2024-06-18T12:00:21.750236+00:00'
+modified: '2024-06-19T11:55:00.394806+00:00'
 pattern: false

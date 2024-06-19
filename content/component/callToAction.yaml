@@ -139,8 +139,8 @@ useTeamPermissions: true
 slots: []
 titleParameter: title
 canBeComposition: false
-created: '2024-04-15T10:51:33.756678+00:00'
-updated: '2024-04-15T10:51:33.756678+00:00'
+created: '2024-05-22T13:26:27.07416+00:00'
+updated: '2024-05-22T13:26:27.07416+00:00'
 variants:
   - id: alignLeft
     name: Align Left

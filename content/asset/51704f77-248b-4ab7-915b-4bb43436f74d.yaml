@@ -8,13 +8,13 @@ asset:
       value: icon_accordion_w.svg
     file:
       type: file
-      value: 310ad72e-83e0-4268-8aeb-46a9fd8edd33
+      value: 78c8addc-e419-44ea-9bd5-3ceb99cdc8d2
     mediaType:
       value: image/svg+xml
       type: text
     url:
       value: >-
-        https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/AJCMaPPPT9elpeG8mBKrOA-icon_accordion_w.svg
+        https://img.uniform.global/p/CxGKBnIZSlmgHW5vuemhTw/ftECoM4sT6uYkjA0rKLGDw-icon_accordion_w.svg
       type: text
     size:
       value: 715
@@ -26,5 +26,5 @@ asset:
       value: 220
       type: number
     custom: {}
-created: '2024-04-15T10:51:12.723078+00:00'
-modified: '2024-04-15T10:51:12.723078+00:00'
+created: '2024-05-22T13:26:12.658836+00:00'
+modified: '2024-05-22T13:26:12.658836+00:00'

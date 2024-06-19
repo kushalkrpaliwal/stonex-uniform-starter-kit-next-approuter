@@ -8,13 +8,13 @@ asset:
       value: blog_header_cmc_comparison_guide.png
     file:
       type: file
-      value: 5a183cd2-52df-4e6b-a1b9-3cb81c30e209
+      value: a4d923f0-1699-42b1-8d5a-63e682b6b29c
     mediaType:
       value: image/png
       type: text
     url:
       value: >-
-        https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/p-dN2_YFRLyhTVthG-3fPg-blog_header_cmc_comparison_guide.png
+        https://img.uniform.global/p/CxGKBnIZSlmgHW5vuemhTw/R7J2WAa8SHWZR3luM66vvg-blog_header_cmc_comparison_guide.png
       type: text
     size:
       value: 57386
@@ -26,5 +26,5 @@ asset:
       value: 461
       type: number
     custom: {}
-created: '2024-04-15T10:51:15.690481+00:00'
-modified: '2024-04-15T10:51:15.690481+00:00'
+created: '2024-05-22T13:26:16.818681+00:00'
+modified: '2024-05-22T13:26:16.818681+00:00'

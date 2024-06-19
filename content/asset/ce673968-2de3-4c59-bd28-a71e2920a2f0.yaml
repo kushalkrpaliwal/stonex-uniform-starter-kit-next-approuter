@@ -8,13 +8,13 @@ asset:
       value: image-svgrepo-com-(1).svg
     file:
       type: file
-      value: 57d38103-6c32-4b8b-bde6-3d9afa06a4ff
+      value: 48d49701-50e3-4413-834a-f954dd8e54fa
     mediaType:
       value: image/svg+xml
       type: text
     url:
       value: >-
-        https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/EyVjr3S7SHqoKLARWX6foQ-image-svgrepo-com-(1).svg
+        https://img.uniform.global/p/CxGKBnIZSlmgHW5vuemhTw/uOV0EPkGS7SLC2xvY0DM6w-image-svgrepo-com-(1).svg
       type: text
     size:
       value: 599
@@ -26,5 +26,5 @@ asset:
       value: 800
       type: number
     custom: {}
-created: '2024-04-15T10:51:15.628042+00:00'
-modified: '2024-04-15T10:51:15.628042+00:00'
+created: '2024-05-22T13:26:16.502457+00:00'
+modified: '2024-05-22T13:26:16.502457+00:00'

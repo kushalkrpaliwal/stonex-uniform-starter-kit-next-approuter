@@ -8,13 +8,13 @@ asset:
       value: hero_rectangle.png
     file:
       type: file
-      value: 234e68cd-1124-4a00-9118-e73927fc7e7f
+      value: 08b53d59-19f7-496f-9726-c6d830560d7b
     mediaType:
       value: image/png
       type: text
     url:
       value: >-
-        https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/l33C0rT1QlehX67eRh2NBA-hero_rectangle.png
+        https://img.uniform.global/p/CxGKBnIZSlmgHW5vuemhTw/Xp61_KJXRA2D_LeZn9OaAA-hero_rectangle.png
       type: text
     size:
       value: 76327
@@ -26,5 +26,5 @@ asset:
       value: 496
       type: number
     custom: {}
-created: '2024-04-15T10:51:16.127166+00:00'
-modified: '2024-04-15T10:51:16.127166+00:00'
+created: '2024-05-22T13:26:17.719624+00:00'
+modified: '2024-05-22T13:26:17.719624+00:00'
