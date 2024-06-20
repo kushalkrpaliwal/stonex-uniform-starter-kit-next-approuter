@@ -52,7 +52,7 @@ export const Image: FC<ImageProps> = ({
     <div
       className={classNames(
         'relative',
-        { 'w-full f-full': objectFit === 'cover' || objectFit === 'contain' || objectFit === 'fill' },
+        { 'w-full h-full': objectFit === 'cover' || objectFit === 'contain' || objectFit === 'fill' },
         getBorderColorStyle(borderColor),
         getBorderRadiusStyle(borderRadius)
       )}
