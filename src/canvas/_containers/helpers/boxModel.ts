@@ -1,10 +1,10 @@
 import classNames from 'classnames';
 
 type Sides = {
-  top: number;
-  right: number;
-  bottom: number;
-  left: number;
+  top: string;
+  right: string;
+  bottom: string;
+  left: string;
 };
 
 export type BoxModel = {
@@ -15,8 +15,17 @@ export type BoxModel = {
 
 export const getBoxModelStyles = (boxModel: BoxModel) => {
   return classNames(
-    Boolean(boxModel) && Object.entries(boxModel.padding).map(([side, value]) => `p${side[0]}-${value}`),
-    Boolean(boxModel) && Object.entries(boxModel.border).map(([side, value]) => `border-${side[0]}-${value}`),
-    Boolean(boxModel) && Object.entries(boxModel.margin).map(([side, value]) => `m${side[0]}-${value}`)
+    !!boxModel?.padding &&
+      Object.entries(boxModel.padding)
+        .filter(entry => !!entry[1])
+        .map(([side, value]) => `p${side[0]}-${value}`),
+    !!boxModel?.border &&
+      Object.entries(boxModel.border)
+        .filter(entry => !!entry[1])
+        .map(([side, value]) => `border-${side[0]}-${value}`),
+    !!boxModel?.margin &&
+      Object.entries(boxModel.margin)
+        .filter(entry => !!entry[1])
+        .map(([side, value]) => `m${side[0]}-${value}`)
   );
 };
