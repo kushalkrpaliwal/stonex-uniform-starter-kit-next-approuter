@@ -550,9 +550,15 @@ composition:
                       title:
                         type: text
                         value: Buttons Grid
+                      verticalGap:
+                        type: stp-gap-parameter
+                        value: gap-md
                       columnsCount:
                         type: tp-slider-parameter
                         value: '5'
+                      horizontalGap:
+                        type: stp-gap-parameter
+                        value: gap-lg
               variant: fluidContent
               parameters:
                 title:
@@ -775,5 +781,5 @@ composition:
                 bottom: xxxxxxs
   _dataResources: {}
 created: '2024-06-19T12:03:55.889903+00:00'
-modified: '2024-06-19T16:26:32.672857+00:00'
+modified: '2024-06-20T11:09:04.327092+00:00'
 pattern: false

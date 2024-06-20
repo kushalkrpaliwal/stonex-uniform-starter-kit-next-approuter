@@ -4,6 +4,16 @@ composition:
   _slug: tims-page
   type: page
   parameters:
+    brand:
+      type: stp-set-up-theme-parameter
+      value:
+        iconUrl: >-
+          https://www.stonex.com/-/media/project/gain-capital/stonex/stonex-main/logos/stonex-logo-black.svg
+        themeName: stonex
+        themeLabel: Stonex
+    theme:
+      type: tp-segmented-control-parameter
+      value: light
     pageTitle:
       type: text
       value: Tims Page
@@ -358,5 +368,5 @@ composition:
           type: tp-segmented-control-parameter
           value: bold
 created: '2024-05-31T13:56:39.616764+00:00'
-modified: '2024-06-19T13:53:32.34323+00:00'
+modified: '2024-06-20T09:05:27.765386+00:00'
 pattern: false

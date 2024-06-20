@@ -45,52 +45,24 @@ parameters:
           value: '12'
       maxValue: 10
       minValue: 0
-  - id: gapX
-    name: Gap X
-    type: tp-slider-parameter
+  - id: horizontalGap
+    name: Horizontal Gap
+    type: stp-gap-parameter
     helpText: ''
-    typeConfig:
-      step: 1
-      type: custom
-      unit: px
-      options:
-        - label: None
-          value: none
-        - label: Small
-          value: small
-        - label: Medium
-          value: medium
-        - label: Large
-          value: large
-      maxValue: 10
-      minValue: 0
-  - id: gapY
-    name: Gap Y
-    type: tp-slider-parameter
+    typeConfig: null
+    localizable: false
+  - id: verticalGap
+    name: Vertical Gap
+    type: stp-gap-parameter
     helpText: ''
-    typeConfig:
-      step: 1
-      type: custom
-      unit: px
-      options:
-        - label: None
-          value: none
-        - label: Small
-          value: small
-        - label: Medium
-          value: medium
-        - label: Large
-          value: large
-      maxValue: 10
-      minValue: 0
+    typeConfig: null
+    localizable: false
   - id: group_presentationSettings
     name: Presentation Settings
     type: group
     typeConfig:
       collapsed: true
       childrenParams:
-        - fullHeight
-        - textColorVariant
         - containerVariant
         - backgroundType
         - paddingTop
@@ -208,4 +180,4 @@ slots:
 titleParameter: title
 canBeComposition: false
 created: '2024-05-22T13:26:28.547674+00:00'
-updated: '2024-06-13T14:27:38.106627+00:00'
+updated: '2024-06-20T11:12:45.987614+00:00'
