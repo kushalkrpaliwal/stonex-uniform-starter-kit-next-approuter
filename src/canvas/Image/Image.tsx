@@ -51,7 +51,8 @@ export const Image: FC<ImageProps> = ({
   return (
     <div
       className={classNames(
-        'relative w-full h-full',
+        'relative',
+        { 'w-full f-full': !objectFit || objectFit === 'none' },
         getBorderColorStyle(borderColor),
         getBorderRadiusStyle(borderRadius)
       )}
