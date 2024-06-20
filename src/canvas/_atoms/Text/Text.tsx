@@ -37,8 +37,10 @@ export const Text: FC<TextProps> = ({
       }}
       as={Tag}
       className={classNames(
-        '!bg-clip-text',
-        'text-transparent',
+        {
+          '!bg-clip-text': !context.isContextualEditing,
+          'text-transparent': !context.isContextualEditing,
+        },
         getDefaultTextStyle(Tag),
         getTextSize(size),
         getTextLetterSpacing(letterSpacing)
@@ -51,7 +53,7 @@ export const Text: FC<TextProps> = ({
   // ToDo requires refactoring (styles do not apply when сontextual editing)
   // As per recent changes it's not supporting a gradient color as well.
   return context.isContextualEditing ? (
-    <div style={{ color: textColor, ...style, ...restStyles }}>
+    <div style={{ background: textColor, color: 'transparent', backgroundClip: 'text', ...style, ...restStyles }}>
       <TextElement />
     </div>
   ) : (
