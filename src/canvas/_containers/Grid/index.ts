@@ -8,6 +8,8 @@ export type GridProps = ComponentProps<
     columnsCount: Types.AvailableColumnCount;
     gapY: Types.AvailableGapVariants;
     gapX: Types.AvailableGapVariants;
+    horizontalGap: string;
+    verticalGap: string;
   },
   'grid-inner'
 >;

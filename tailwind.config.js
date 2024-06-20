@@ -91,7 +91,7 @@ module.exports = {
   ],
   safelist: [
     ...buttonsSafelist,
-    { pattern: /(pt|pr|pb|pl|mt|mr|mb|ml|border-t|border-r|border-b|border-l|rounded|shadow)-.+/ },
+    { pattern: /(pt|pr|pb|pl|mt|mr|mb|ml|border-t|border-r|border-b|border-l|rounded|shadow|gap-x|gap-y)-.+/ },
   ],
   corePlugins: {
     container: false,
