@@ -19,8 +19,8 @@ export const AdvancedContainer: FC<AdvancedContainerProps> = ({
   return (
     <div
       title={title}
-      className={classNames(getBoxModelStyles(boxModel), borderRadius, boxShadow, {
-        'overflow-hidden': !!borderRadius,
+      className={classNames('relative', getBoxModelStyles(boxModel), borderRadius, boxShadow, {
+        'overflow-hidden': !!borderRadius || !!slots['background'],
         'max-w-screen-xl mx-auto': component.variant !== AdvancedContainerVariants.FluidContent,
       })}
       style={{
