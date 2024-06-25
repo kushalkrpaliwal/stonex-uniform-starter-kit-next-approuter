@@ -1,0 +1,42 @@
+{
+  "transparent": {
+    "value": "rgba(255,255,255,0)",
+    "type": "color"
+  },
+  "medium": {
+    "value": "500",
+    "type": "fontWeights"
+  },
+  "regular": {
+    "value": "400",
+    "type": "fontWeights"
+  },
+  "light": {
+    "value": "300",
+    "type": "fontWeights"
+  },
+  "bold": {
+    "value": "700",
+    "type": "fontWeights"
+  },
+  "underline": {
+    "value": "underline",
+    "type": "textDecoration"
+  },
+  "uppercase": {
+    "value": "uppercase",
+    "type": "textCase"
+  },
+  "none": {
+    "value": "none",
+    "type": "textCase"
+  },
+  "placeholder": {
+    "value": "#f00",
+    "type": "color"
+  },
+  "white": {
+    "value": "#fff",
+    "type": "color"
+  }
+}

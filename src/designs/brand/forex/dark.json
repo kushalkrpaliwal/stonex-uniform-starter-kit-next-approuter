@@ -1,0 +1,393 @@
+{
+  "color": {
+    "Brand": {
+      "Primary": {
+        "value": "{color.blue.600}",
+        "type": "color"
+      },
+      "Secondary": {
+        "value": "{color.blue.900}",
+        "type": "color"
+      },
+      "Tertiary": {
+        "value": "{color.green.500}",
+        "type": "color"
+      },
+      "Icon": {
+        "value": "{color.neutral.0}",
+        "type": "color"
+      }
+    },
+    "Text": {
+      "Primary": {
+        "value": "{color.neutral.0}",
+        "type": "color"
+      },
+      "Secondary": {
+        "value": "{color.blue.100}",
+        "type": "color"
+      },
+      "Tertiary": {
+        "value": "{color.blue.300}",
+        "type": "color"
+      }
+    },
+    "Button": {
+      "Primary": {
+        "Background": {
+          "Default": {
+            "value": "{color.green.500}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{color.green.700}",
+            "type": "color"
+          },
+          "Active": {
+            "value": "{color.green.900}",
+            "type": "color"
+          }
+        },
+        "Foreground": {
+          "Default": {
+            "value": "{color.neutral.0}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{color.neutral.0}",
+            "type": "color"
+          },
+          "Active": {
+            "value": "{color.neutral.0}",
+            "type": "color"
+          }
+        }
+      },
+      "Secondary": {
+        "Background": {
+          "Default": {
+            "value": "{transparent}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{color.neutral.0}",
+            "type": "color"
+          },
+          "Active": {
+            "value": "{color.blue.100}",
+            "type": "color"
+          }
+        },
+        "Foreground": {
+          "Default": {
+            "value": "{color.neutral.0}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{color.Brand.Secondary}",
+            "type": "color"
+          },
+          "Active": {
+            "value": "{color.Brand.Secondary}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "Link": {
+      "Default": {
+        "value": "{color.neutral.0}",
+        "type": "color"
+      },
+      "Hover": {
+        "value": "{color.blue.200}",
+        "type": "color"
+      },
+      "Active": {
+        "value": "{color.blue.400}",
+        "type": "color"
+      }
+    },
+    "Border": {
+      "Default": {
+        "value": "{color.neutral.0}",
+        "type": "color"
+      },
+      "Hover": {
+        "value": "{color.blue.200}",
+        "type": "color"
+      },
+      "Active": {
+        "value": "{color.blue.400}",
+        "type": "color"
+      },
+      "Selected": {
+        "value": "{color.Brand.Primary}",
+        "type": "color"
+      }
+    },
+    "Card": {
+      "Default": {
+        "value": "{color.Brand.Secondary}",
+        "type": "color"
+      },
+      "Hover": {
+        "value": "{color.blue.800}",
+        "type": "color"
+      },
+      "Active": {
+        "value": "{color.blue.700}",
+        "type": "color"
+      }
+    },
+    "Surface": {
+      "Background": {
+        "value": "{color.Brand.Secondary}",
+        "type": "color"
+      },
+      "Level1": {
+        "value": "{color.blue.800}",
+        "type": "color"
+      },
+      "Level2": {
+        "value": "{color.blue.700}",
+        "type": "color"
+      },
+      "Level3": {
+        "value": "{color.Brand.Primary}",
+        "type": "color"
+      },
+      "Overlay": {
+        "Background": {
+          "value": "{color.Brand.Secondary}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.75",
+                "space": "lch"
+              }
+            }
+          }
+        },
+        "Image": {
+          "value": "linear-gradient(90deg, rgba({color.Surface.Background},0.8) 30%, rgba({color.Surface.Background},0.2) 100%)",
+          "type": "color"
+        }
+      }
+    },
+    "Success": {
+      "Default": {
+        "value": "{color.green.500}",
+        "type": "color"
+      },
+      "Background": {
+        "Default": {
+          "value": "{color.green.900}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{color.green.800}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{color.green.700}",
+          "type": "color"
+        }
+      },
+      "Foreground": {
+        "Default": {
+          "value": "{color.green.100}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{color.green.200}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{color.green.50}",
+          "type": "color"
+        }
+      }
+    },
+    "Info": {
+      "Default": {
+        "value": "{color.blue.500}",
+        "type": "color"
+      },
+      "Background": {
+        "Default": {
+          "value": "{color.blue.900}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{color.blue.800}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{color.blue.700}",
+          "type": "color"
+        }
+      },
+      "Foreground": {
+        "Default": {
+          "value": "{color.blue.100}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{color.blue.200}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{color.blue.50}",
+          "type": "color"
+        }
+      }
+    },
+    "Warning": {
+      "Default": {
+        "value": "{color.orange.500}",
+        "type": "color"
+      },
+      "Background": {
+        "Default": {
+          "value": "{color.orange.900}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{color.orange.800}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{color.orange.700}",
+          "type": "color"
+        }
+      },
+      "Foreground": {
+        "Default": {
+          "value": "{color.orange.100}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{color.orange.200}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{color.orange.50}",
+          "type": "color"
+        }
+      }
+    },
+    "Error": {
+      "Default": {
+        "value": "{color.red.500}",
+        "type": "color"
+      },
+      "Background": {
+        "Default": {
+          "value": "{color.red.900}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{color.red.800}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{color.red.700}",
+          "type": "color"
+        }
+      },
+      "Foreground": {
+        "Default": {
+          "value": "{color.red.100}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{color.red.200}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{color.red.50}",
+          "type": "color"
+        }
+      }
+    },
+    "Neutral": {
+      "Default": {
+        "value": "{color.neutral.500}",
+        "type": "color"
+      },
+      "Background": {
+        "Default": {
+          "value": "{color.neutral.900}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{color.neutral.800}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{color.neutral.700}",
+          "type": "color"
+        }
+      },
+      "Foreground": {
+        "Default": {
+          "value": "{color.neutral.100}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{color.neutral.200}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{color.neutral.50}",
+          "type": "color"
+        }
+      }
+    },
+    "Disabled": {
+      "Background": {
+        "Default": {
+          "value": "{color.neutral.600}",
+          "type": "color"
+        }
+      },
+      "Foreground": {
+        "Default": {
+          "value": "{color.neutral.400}",
+          "type": "color"
+        }
+      }
+    }
+  },
+  "background-image": {
+    "value": "https://i.ibb.co/GRT3r50/Indices-hero.jpg",
+    "type": "asset"
+  },
+  "shadow": {
+    "1": {
+      "value": {
+        "x": "0",
+        "y": "4",
+        "blur": "16",
+        "spread": "0",
+        "color": "#0000001A",
+        "type": "dropShadow"
+      },
+      "type": "boxShadow"
+    },
+    "2": {
+      "value": {
+        "x": "0",
+        "y": "6",
+        "blur": "16",
+        "spread": "0",
+        "color": "#00000029",
+        "type": "dropShadow"
+      },
+      "type": "boxShadow"
+    }
+  }
+}

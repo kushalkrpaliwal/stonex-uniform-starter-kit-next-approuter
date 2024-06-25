@@ -1,0 +1,402 @@
+{
+  "color": {
+    "Brand": {
+      "Primary": {
+        "value": "{Blue.Light}",
+        "type": "color"
+      },
+      "Secondary": {
+        "value": "{Blue.Mid}",
+        "type": "color"
+      },
+      "Tertiary": {
+        "value": "{Blue.Dark}",
+        "type": "color"
+      },
+      "Icon": {
+        "value": "{Blue.Gradient}",
+        "type": "color"
+      }
+    },
+    "Text": {
+      "Primary": {
+        "value": "{Base.Dark}",
+        "type": "color"
+      },
+      "Secondary": {
+        "value": "{Tints.Mid.800}",
+        "type": "color"
+      },
+      "Tertiary": {
+        "value": "{Tints.Mid.600}",
+        "type": "color"
+      }
+    },
+    "Button": {
+      "Primary": {
+        "Background": {
+          "Default": {
+            "value": "{Blue.Gradient}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Blue.Mid}",
+            "type": "color"
+          },
+          "Active": {
+            "value": "{Blue.Dark}",
+            "type": "color"
+          }
+        },
+        "Foreground": {
+          "Default": {
+            "value": "{Base.White}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Base.White}",
+            "type": "color"
+          },
+          "Active": {
+            "value": "{Base.White}",
+            "type": "color"
+          }
+        }
+      },
+      "Secondary": {
+        "Background": {
+          "Default": {
+            "value": "{transparent}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{transparent}",
+            "type": "color"
+          },
+          "Active": {
+            "value": "{Blue.Dark}",
+            "type": "color"
+          }
+        },
+        "Foreground": {
+          "Default": {
+            "value": "{Blue.Gradient}",
+            "type": "color"
+          },
+          "Hover": {
+            "value": "{Blue.Dark}",
+            "type": "color"
+          },
+          "Active": {
+            "value": "{Base.White}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "Link": {
+      "Default": {
+        "value": "{Blue.Gradient}",
+        "type": "color"
+      },
+      "Hover": {
+        "value": "{Blue.Mid}",
+        "type": "color"
+      },
+      "Active": {
+        "value": "{Blue.Dark}",
+        "type": "color"
+      }
+    },
+    "Border": {
+      "Default": {
+        "value": "{lightTheme.container.Stroke}",
+        "type": "color"
+      },
+      "Hover": {
+        "value": "{Tints.Mid.300}",
+        "type": "color"
+      },
+      "Active": {
+        "value": "{Blue.Mid}",
+        "type": "color"
+      },
+      "Selected": {
+        "value": "{Blue.Light}",
+        "type": "color"
+      }
+    },
+    "Card": {
+      "Default": {
+        "value": "{lightTheme.container.Fill}",
+        "type": "color"
+      },
+      "Hover": {
+        "value": "{Tints.Saturated.50}",
+        "type": "color"
+      },
+      "Active": {
+        "value": "{Tints.Saturated.100}",
+        "type": "color"
+      }
+    },
+    "Surface": {
+      "Background": {
+        "value": "{Base.White}",
+        "type": "color"
+      },
+      "Level1": {
+        "value": "{Tints.Saturated.50}",
+        "type": "color"
+      },
+      "Level2": {
+        "value": "{Tints.Saturated.100}",
+        "type": "color"
+      },
+      "Level3": {
+        "value": "{Tints.Saturated.200}",
+        "type": "color"
+      },
+      "Overlay": {
+        "Background": {
+          "value": "{color.Text.Primary}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.5",
+                "space": "lch"
+              }
+            }
+          }
+        },
+        "Image": {
+          "value": "{color.Surface.Background}",
+          "type": "color",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.5",
+                "space": "lch"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Success": {
+      "Default": {
+        "value": "{Functional.Green.500}",
+        "type": "color"
+      },
+      "Background": {
+        "Default": {
+          "value": "{Functional.Green.100}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{Functional.Green.300}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{Functional.Green.200}",
+          "type": "color"
+        }
+      },
+      "Foreground": {
+        "Default": {
+          "value": "{Functional.Green.900}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{Functional.Green.700}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{Functional.Green.800}",
+          "type": "color"
+        }
+      }
+    },
+    "Info": {
+      "Default": {
+        "value": "{Blue.Mid}",
+        "type": "color"
+      },
+      "Background": {
+        "Default": {
+          "value": "{Functional.Blue.100}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{Functional.Blue.200}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{Functional.Blue.300}",
+          "type": "color"
+        }
+      },
+      "Foreground": {
+        "Default": {
+          "value": "{Functional.Blue.800}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{Functional.Blue.700}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{Functional.Blue.900}",
+          "type": "color"
+        }
+      }
+    },
+    "Warning": {
+      "Default": {
+        "value": "{Functional.Orange.500}",
+        "type": "color"
+      },
+      "Background": {
+        "Default": {
+          "value": "{Functional.Orange.100}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{Functional.Orange.200}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{Functional.Orange.300}",
+          "type": "color"
+        }
+      },
+      "Foreground": {
+        "Default": {
+          "value": "{Functional.Orange.800}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{Functional.Orange.700}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{Functional.Orange.900}",
+          "type": "color"
+        }
+      }
+    },
+    "Error": {
+      "Default": {
+        "value": "{Functional.Red.500}",
+        "type": "color"
+      },
+      "Background": {
+        "Default": {
+          "value": "{Functional.Red.100}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{Functional.Red.200}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{Functional.Red.300}",
+          "type": "color"
+        }
+      },
+      "Foreground": {
+        "Default": {
+          "value": "{Functional.Red.800}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{Functional.Red.700}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{Functional.Red.900}",
+          "type": "color"
+        }
+      }
+    },
+    "Disabled": {
+      "Background": {
+        "Default": {
+          "value": "{Tints.Mid.200}",
+          "type": "color"
+        }
+      },
+      "Foreground": {
+        "Default": {
+          "value": "{Tints.Mid.500}",
+          "type": "color"
+        }
+      }
+    },
+    "Neutral": {
+      "Default": {
+        "value": "{Tints.Mid.500}",
+        "type": "color"
+      },
+      "Background": {
+        "Default": {
+          "value": "{Tints.Mid.50}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{Tints.Mid.100}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{Tints.Mid.200}",
+          "type": "color"
+        }
+      },
+      "Foreground": {
+        "Default": {
+          "value": "{Tints.Mid.800}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{Tints.Mid.700}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{Tints.Mid.900}",
+          "type": "color"
+        }
+      }
+    }
+  },
+  "shadow": {
+    "1": {
+      "value": {
+        "x": "0",
+        "y": "4",
+        "blur": "10",
+        "spread": "0",
+        "color": "#040C170F",
+        "type": "dropShadow"
+      },
+      "type": "boxShadow"
+    },
+    "2": {
+      "value": {
+        "x": "0",
+        "y": "6",
+        "blur": "16",
+        "spread": "0",
+        "color": "#040C1729",
+        "type": "dropShadow"
+      },
+      "type": "boxShadow"
+    }
+  },
+  "background-image": {
+    "value": "https://i.ibb.co/LhMS1j0/stonex-hero-light-2.jpg",
+    "type": "asset"
+  }
+}

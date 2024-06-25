@@ -2,7 +2,7 @@ import { permutateThemes, registerTransforms, transforms as sdTransforms } from 
 import StyleDictionary from 'style-dictionary'
 import { promises } from 'fs'
 
-const sourcePath = './src/figma/themes'
+const sourcePath = './src/designs/themes'
 
 registerTransforms(StyleDictionary, {
   /* options here if needed */
