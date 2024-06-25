@@ -6,11 +6,6 @@ import { BrandCTAComponentProps } from '.';
 import Link from 'next/link';
 import CarbonIcon from '@/components/CarbonIcon';
 
-export type SpacingOptionType = {
-  label: string;
-  value: string;
-};
-
 export const BrandCTAComponent: FC<BrandCTAComponentProps> = props => {
   const { context, component, ctaParameters, iconName, rightIconPlacement } = props;
   const { className, type, size } = ctaParameters || {
