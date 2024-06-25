@@ -46,33 +46,33 @@ module.exports = {
   content: ['./src/**/*.{js,ts,tsx,json}'],
   theme: {
     container: {},
-    spacing: {
-      0: '0',
-      1: '1px',
-      ...spacing.spacing,
-      ...screenSizes,
-    },
-    padding: {
-      ...spacing.padding,
-    },
-    margin: {
-      auto: 'auto',
-      ...spacing.padding,
-    },
-    gap: {
-      ...spacing.gap,
-    },
-    boxShadow: boxShadow.shadow,
-    borderRadius: borderRadius.border,
-    borderWidth: {
-      0: '',
-      1: '1px',
-      2: '2px',
-      3: '3px',
-      4: '4px',
-      5: '5px',
-    },
     extend: {
+      spacing: {
+        0: '0',
+        1: '1px',
+        ...spacing.spacing,
+        ...screenSizes,
+      },
+      padding: {
+        ...spacing.padding,
+      },
+      margin: {
+        auto: 'auto',
+        ...spacing.padding,
+      },
+      gap: {
+        ...spacing.gap,
+      },
+      boxShadow: boxShadow.shadow,
+      borderRadius: borderRadius.border,
+      borderWidth: {
+        0: '',
+        1: '1px',
+        2: '2px',
+        3: '3px',
+        4: '4px',
+        5: '5px',
+      },
       colors: {
         ...colors,
         transparent: 'transparent',
