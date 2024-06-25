@@ -47,6 +47,7 @@ module.exports = {
   theme: {
     container: {},
     spacing: {
+      0: '0',
       1: '1px',
       ...spacing.spacing,
       ...screenSizes,
@@ -64,6 +65,7 @@ module.exports = {
     boxShadow: boxShadow.shadow,
     borderRadius: borderRadius.border,
     borderWidth: {
+      0: '',
       1: '1px',
       2: '2px',
       3: '3px',
