@@ -5,7 +5,7 @@ import { getMediaUrl } from '../../utilities';
 import { componentResolver } from '../../canvas/index';
 
 // Uncomment this to enable static site generation mode
-// export { generateStaticParams } from '@uniformdev/canvas-next-rsc';
+export { generateStaticParams } from '@uniformdev/canvas-next-rsc';
 
 // Optionally, enable edge rendering mode to run render on the CDN nodes
 export const runtime = 'edge';
@@ -63,5 +63,5 @@ export async function generateMetadata(props: PageParameters): Promise<Metadata>
 
 export default async function Home(props: PageParameters) {
   const route = await retrieveRoute(props);
-  return <UniformComposition {...props} route={route} resolveComponent={componentResolver} mode="server" />;
+  return <UniformComposition {...props} route={route} resolveComponent={componentResolver} mode="static" />;
 }
