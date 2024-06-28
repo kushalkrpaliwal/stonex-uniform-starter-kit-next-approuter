@@ -6,7 +6,7 @@ import { componentResolver } from '@/canvas';
 import { DynamicCSS } from '@/components/DynamicCSS/DynamicCSS';
 
 // Uncomment this to enable static site generation mode
-// export { generateStaticParams } from '@uniformdev/canvas-next-rsc'
+export { generateStaticParams } from '@uniformdev/canvas-next-rsc';
 
 // Optionally, enable edge rendering mode to run render on the CDN nodes
 // export const runtime = 'edge'
@@ -71,7 +71,7 @@ export default async function Home(props: PageParameters) {
   return (
     <>
       <DynamicCSS brand={params?.brand?.value?.themeName?.toLowerCase()} theme={params?.theme?.value} />
-      <UniformComposition {...props} route={route} resolveComponent={componentResolver} mode="server" />
+      <UniformComposition {...props} route={route} resolveComponent={componentResolver} mode="static" />
     </>
   );
 }
