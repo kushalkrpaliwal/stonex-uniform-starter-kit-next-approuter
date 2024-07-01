@@ -1,8 +1,8 @@
-import { FC } from 'react'
-import classNames from 'classnames'
-import { ThemeProviderProps } from '.'
-import { appFonts } from '@/fonts'
-import { NextFont } from 'next/dist/compiled/@next/font'
+import { FC } from 'react';
+import classNames from 'classnames';
+import { ThemeProviderProps } from '.';
+import { appFonts } from '@/fonts';
+import { NextFont } from 'next/dist/compiled/@next/font';
 
 const fonts: {
   [key: string]: NextFont;
@@ -10,13 +10,13 @@ const fonts: {
   stonex: appFonts.forma,
   cityindex: appFonts.aeonik,
   forex: appFonts.poppins,
-}
+};
 
 const ThemeProvider: FC<ThemeProviderProps> = ({ children, parameters }) => {
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-expect-error
-  const brandName = parameters?.brand?.value?.themeName?.toLowerCase() || 'wireframe'
-  const themeName = parameters?.theme?.value || 'light'
+  const brandName = parameters?.brand?.value?.themeName?.toLowerCase() || 'wireframe';
+  const themeName = parameters?.theme?.value || 'light';
 
   return (
     <div
@@ -26,7 +26,7 @@ const ThemeProvider: FC<ThemeProviderProps> = ({ children, parameters }) => {
     >
       {children}
     </div>
-  )
-}
+  );
+};
 
-export default ThemeProvider
+export default ThemeProvider;

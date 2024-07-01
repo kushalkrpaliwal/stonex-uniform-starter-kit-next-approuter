@@ -93,10 +93,7 @@ declare namespace Types {
     name: string;
   };
 
-  type SupportedFonts =
-    | 'poppins'
-    | 'forma'
-    | 'aeonik';
+  type SupportedFonts = 'poppins' | 'forma' | 'aeonik';
 
   type ThemeValue = {
     themeName: Types.SupportedThemes;
