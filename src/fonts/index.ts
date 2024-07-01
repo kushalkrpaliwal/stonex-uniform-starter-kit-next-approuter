@@ -1,92 +1,94 @@
-import { NextFont } from 'next/dist/compiled/@next/font';
+import { NextFont } from 'next/dist/compiled/@next/font'
+import localFont from 'next/font/local'
 import {
-  Inter,
-  Roboto_Mono,
-  Rubik,
-  DM_Mono,
-  Farro,
-  Damion,
-  Advent_Pro,
-  Asap,
-  Antonio,
-  Maven_Pro,
-  Lexend_Giga,
-  Metrophobic,
-} from 'next/font/google';
+  Poppins
+} from 'next/font/google'
 
-const inter = Inter({
+const poppins = Poppins({
   subsets: ['latin'],
+  weight: ['300', '400', '500', '700'],
   display: 'swap',
-});
+  preload: true,
+})
 
-const lexend_giga = Lexend_Giga({ subsets: ['latin'] });
-
-export const metrophobic = Metrophobic({ weight: ['400'], subsets: ['latin'], display: 'swap' });
-
-const rubik = Rubik({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+const forma = localFont({
   display: 'swap',
-});
+  preload: true,
+  src: [
+    {
+      path: './StonexForma/StoneXForma-Regular.woff2',
+      weight: '400',
+      style: 'normal'
+    },
+    {
+      path: './StonexForma/StoneXForma-Italic.woff2',
+      weight: '400',
+      style: 'italic',
+    },
+    {
+      path: './StonexForma/StoneXForma-Bold.woff2',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: './StonexForma/StoneXForma-BoldItalic.woff2',
+      weight: '700',
+      style: 'italic',
+    },
+  ],
+})
 
-const roboto_mono = Roboto_Mono({
-  subsets: ['latin'],
+const aeonik = localFont({
   display: 'swap',
-});
-
-const dm_mono = DM_Mono({
-  weight: ['300', '400', '500'],
-  subsets: ['latin'],
-  display: 'swap',
-});
-
-const farro = Farro({
-  weight: ['300', '400', '500'],
-  subsets: ['latin'],
-  display: 'swap',
-});
-
-const damion = Damion({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-});
-
-const advent_pro = Advent_Pro({
-  weight: ['300', '400', '500'],
-  subsets: ['latin'],
-  display: 'swap',
-});
-
-const asap = Asap({
-  weight: ['300', '400', '500'],
-  subsets: ['latin'],
-  display: 'swap',
-});
-
-const antonio = Antonio({
-  weight: ['300', '400', '500'],
-  subsets: ['latin'],
-  display: 'swap',
-});
-
-const maven_pro = Maven_Pro({
-  weight: ['400', '500', '600'],
-  subsets: ['latin'],
-  display: 'swap',
-});
+  preload: true,
+  src: [
+    {
+      path: './Aeonik/Aeonik-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './Aeonik/Aeonik-RegularItalic.woff2',
+      weight: '400',
+      style: 'italic',
+    },
+    {
+      path: './Aeonik/Aeonik-Bold.woff2',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: './Aeonik/Aeonik-BoldItalic.woff2',
+      weight: '700',
+      style: 'italic',
+    },
+    {
+      path: './Aeonik/Aeonik-Light.woff2',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: './Aeonik/Aeonik-LightItalic.woff2',
+      weight: '300',
+      style: 'italic',
+    },
+    {
+      path: './Aeonik/Aeonik-Medium.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: './Aeonik/Aeonik-MediumItalic.woff2',
+      weight: '500',
+      style: 'italic',
+    },
+  ],
+})
 
 export const appFonts: Record<Types.SupportedFonts, NextFont> = {
-  inter,
-  roboto_mono,
-  rubik,
-  dm_mono,
-  farro,
-  damion,
-  advent_pro,
-  asap,
-  antonio,
-  maven_pro,
-  lexend_giga,
-  metrophobic,
-};
+  poppins,
+  forma,
+  aeonik
+}
+
+

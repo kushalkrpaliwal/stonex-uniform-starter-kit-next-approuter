@@ -94,18 +94,9 @@ declare namespace Types {
   };
 
   type SupportedFonts =
-    | 'inter'
-    | 'roboto_mono'
-    | 'rubik'
-    | 'dm_mono'
-    | 'farro'
-    | 'damion'
-    | 'advent_pro'
-    | 'asap'
-    | 'antonio'
-    | 'maven_pro'
-    | 'lexend_giga'
-    | 'metrophobic';
+    | 'poppins'
+    | 'forma'
+    | 'aeonik';
 
   type ThemeValue = {
     themeName: Types.SupportedThemes;
