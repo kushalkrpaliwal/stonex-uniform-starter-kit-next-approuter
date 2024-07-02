@@ -6,12 +6,6 @@ import { componentResolver } from '@/canvas';
 import { DynamicCSS } from '@/components/DynamicCSS/DynamicCSS';
 import ThemeProvider from '@/components/ThemeProvider';
 
-// Uncomment this to enable static site generation mode
-export { generateStaticParams } from '@uniformdev/canvas-next-rsc';
-
-// Optionally, enable edge rendering mode to run render on the CDN nodes
-// export const runtime = 'edge'
-
 const VERCEL_URL = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : '';
 
 export async function generateMetadata(props: PageParameters): Promise<Metadata> {
@@ -77,4 +71,11 @@ export default async function Home(props: PageParameters) {
   );
 }
 
+// Uncomment this to enable static site generation mode
+export { generateStaticParams } from '@uniformdev/canvas-next-rsc';
+
+// Optionally, enable edge rendering mode to run render on the CDN nodes
+export const runtime = 'edge';
+
+// Change the dynamic behavior of a layout or page to fully static
 export const dynamic = 'force-static';
