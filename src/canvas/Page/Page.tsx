@@ -2,7 +2,6 @@ import { draftMode } from 'next/headers';
 import { ComponentProps, UniformSlot } from '@uniformdev/canvas-next-rsc/component';
 import classNames from 'classnames';
 import { CHILDREN_CONTAINER_STYLES, COMMON_PADDING } from '@/hocs/withoutContainer';
-import ThemeProvider from '../../components/ThemeProvider';
 import UniformPreviewIcon from '../../components/UniformPreviewIcon';
 
 type SlotNames = 'pageHeader' | 'pageContent' | 'pageFooter';
@@ -13,7 +12,7 @@ export const BasePage = ({ slots, component, context }: Props) => {
   const { isEnabled: isEnabledDraftMode } = draftMode();
   const isContextualEditing = context.isContextualEditing;
   return (
-    <ThemeProvider parameters={context.composition.parameters}>
+    <>
       <div className={COMMON_PADDING}>
         <UniformSlot context={context} slot={slots.pageHeader} data={component} />
       </div>
@@ -27,7 +26,7 @@ export const BasePage = ({ slots, component, context }: Props) => {
       </div>
 
       {isEnabledDraftMode && <UniformPreviewIcon isContextualEditing={isContextualEditing} />}
-    </ThemeProvider>
+    </>
   );
 };
 

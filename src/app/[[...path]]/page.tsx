@@ -4,6 +4,7 @@ import { PageParameters, UniformComposition, retrieveRoute } from '@uniformdev/c
 import { getMediaUrl } from '@/utilities';
 import { componentResolver } from '@/canvas';
 import { DynamicCSS } from '@/components/DynamicCSS/DynamicCSS';
+import ThemeProvider from '@/components/ThemeProvider';
 
 // Uncomment this to enable static site generation mode
 export { generateStaticParams } from '@uniformdev/canvas-next-rsc';
@@ -69,9 +70,9 @@ export default async function Home(props: PageParameters) {
   const params = route.compositionApiResponse?.composition?.parameters;
 
   return (
-    <>
+    <ThemeProvider parameters={params}>
       <DynamicCSS brand={params?.brand?.value?.themeName?.toLowerCase()} theme={params?.theme?.value} />
       <UniformComposition {...props} route={route} resolveComponent={componentResolver} mode="static" />
-    </>
+    </ThemeProvider>
   );
 }
