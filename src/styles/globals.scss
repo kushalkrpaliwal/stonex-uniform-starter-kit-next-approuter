@@ -1,23 +1,13 @@
 @import "tailiwnd";
 
-/*// Fonts*/
-//@import "fonts";
-
-/*// General import*/
-/*//@import "general";*/
-
-/*// Brands import*/
-//@import "stonex";
-//@import "forex";
-//@import "cityindex";
-
-/*// Extensions import*/
+/*    Utilities extensions    */
 @import "container";
 @import "buttons";
 
-/*// TODO: Cleanup*/
+/*    TODO: Cleanup    */
 .theme-item {
   @apply flex items-center p-xxxxs rounded-md cursor-pointer;
+
   &.selected-theme-item {
     @apply bg-blue-300;
   }
