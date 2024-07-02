@@ -1,4 +1,4 @@
-import { NextFont } from 'next/dist/compiled/@next/font';
+import { NextFontWithVariable } from 'next/dist/compiled/@next/font';
 import localFont from 'next/font/local';
 import { Poppins } from 'next/font/google';
 
@@ -7,11 +7,13 @@ const poppins = Poppins({
   weight: ['300', '400', '500', '700'],
   display: 'swap',
   preload: true,
+  variable: '--brand',
 });
 
 const forma = localFont({
   display: 'swap',
   preload: true,
+  variable: '--brand',
   src: [
     {
       path: './StonexForma/StoneXForma-Regular.woff2',
@@ -39,6 +41,7 @@ const forma = localFont({
 const aeonik = localFont({
   display: 'swap',
   preload: true,
+  variable: '--brand',
   src: [
     {
       path: './Aeonik/Aeonik-Regular.woff2',
@@ -83,7 +86,7 @@ const aeonik = localFont({
   ],
 });
 
-export const appFonts: Record<Types.SupportedFonts, NextFont> = {
+export const appFonts: Record<Types.SupportedFonts, NextFontWithVariable> = {
   poppins,
   forma,
   aeonik,

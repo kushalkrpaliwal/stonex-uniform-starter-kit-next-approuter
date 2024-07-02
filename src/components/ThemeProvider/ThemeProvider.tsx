@@ -2,10 +2,10 @@ import { FC } from 'react';
 import classNames from 'classnames';
 import { ThemeProviderProps } from '.';
 import { appFonts } from '@/fonts';
-import { NextFont } from 'next/dist/compiled/@next/font';
+import { NextFontWithVariable } from 'next/dist/compiled/@next/font';
 
 const fonts: {
-  [key: string]: NextFont;
+  [key: string]: NextFontWithVariable;
 } = {
   stonex: appFonts.forma,
   cityindex: appFonts.aeonik,
@@ -20,7 +20,11 @@ const ThemeProvider: FC<ThemeProviderProps> = ({ children, parameters }) => {
 
   return (
     <div
-      className={classNames('min-h-screen overflow-x-hidden flex flex-col', fonts[brandName].className)}
+      className={classNames(
+        'min-h-screen overflow-x-hidden flex flex-col',
+        fonts[brandName].variable,
+        fonts[brandName].className
+      )}
       data-theme={themeName}
       data-brand={brandName}
     >
