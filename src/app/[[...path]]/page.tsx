@@ -75,7 +75,7 @@ export default async function Home(props: PageParameters) {
 export { generateStaticParams } from '@uniformdev/canvas-next-rsc';
 
 // Optionally, enable edge rendering mode to run render on the CDN nodes
-export const runtime = 'edge';
+// export const runtime = 'edge';
 
 // Change the dynamic behavior of a layout or page to fully static
-export const dynamic = 'force-static';
+// export const dynamic = 'force-static';
