@@ -76,3 +76,5 @@ export default async function Home(props: PageParameters) {
     </ThemeProvider>
   );
 }
+
+export const dynamic = 'force-static';
