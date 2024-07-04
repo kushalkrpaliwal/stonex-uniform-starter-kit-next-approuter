@@ -66,7 +66,7 @@ export default async function Home(props: PageParameters) {
   return (
     <ThemeProvider parameters={params}>
       <DynamicCSS brand={params?.brand?.value?.themeName?.toLowerCase()} theme={params?.theme?.value} />
-      <UniformComposition {...props} route={route} resolveComponent={componentResolver} mode="static" />
+      <UniformComposition {...props} route={route} resolveComponent={componentResolver} mode="server" />
     </ThemeProvider>
   );
 }
@@ -75,7 +75,7 @@ export default async function Home(props: PageParameters) {
 export { generateStaticParams } from '@uniformdev/canvas-next-rsc';
 
 // Optionally, enable edge rendering mode to run render on the CDN nodes
-// export const runtime = 'edge';
+export const runtime = 'edge';
 
 // Change the dynamic behavior of a layout or page to fully static
-// export const dynamic = 'force-static';
+//export const dynamic = 'force-static';
