@@ -72,7 +72,7 @@ export default async function Home(props: PageParameters) {
 }
 
 // Uncomment this to enable static site generation mode
-export { generateStaticParams } from '@uniformdev/canvas-next-rsc';
+//export { generateStaticParams } from '@uniformdev/canvas-next-rsc';
 
 // Optionally, enable edge rendering mode to run render on the CDN nodes
 export const runtime = 'edge';
