@@ -4,7 +4,7 @@ import '@/tokens/css/global/functional.css';
 import '@/styles/globals.scss';
 import { UniformContext } from '@uniformdev/canvas-next-rsc';
 
-export const runtime = 'edge'
+export const runtime = 'edge';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
