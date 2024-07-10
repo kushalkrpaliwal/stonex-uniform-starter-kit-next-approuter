@@ -5,7 +5,7 @@ import { getFlexBoxStyles, getFlexItemStyles } from '@/canvas/_containers/helper
 import classNames from 'classnames';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export const FlexItem: FC<FlexItemProps> = ({ style, flexBox, flexItem, context, slots, component, ...restStyles }) => (
+export const FlexItem: FC<FlexItemProps> = ({ flexBox, flexItem, context, slots, component, ...restStyles }) => (
   <div className={classNames(flexBox && getFlexBoxStyles(flexBox), getFlexItemStyles(flexItem))}>
     <UniformSlot context={context} slot={slots.content} data={component} />
   </div>
