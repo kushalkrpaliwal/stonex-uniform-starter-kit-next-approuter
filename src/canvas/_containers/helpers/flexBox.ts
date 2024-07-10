@@ -8,6 +8,14 @@ export interface FlexBoxValue {
   gap: string;
 }
 
+export interface FlexItemValue {
+  basis: string;
+  grow: boolean;
+  shrink: boolean;
+  justifySelf: string;
+  alignSelf: string;
+}
+
 export const getFlexBoxStyles = (flexBox?: FlexBoxValue) => {
   if (!flexBox) return '';
 
@@ -18,5 +26,14 @@ export const getFlexBoxStyles = (flexBox?: FlexBoxValue) => {
     [flexBox?.alignItems]: flexBox?.useFlexBox,
     [flexBox?.justifyContent]: flexBox?.useFlexBox,
     [flexBox?.gap]: flexBox?.useFlexBox,
+  });
+};
+
+export const getFlexItemStyles = (flex?: FlexItemValue) => {
+  if (!flex) return '';
+
+  return classNames('flex', flex.basis, flex.justifySelf, flex.alignSelf, {
+    grow: flex.grow,
+    shrink: flex.shrink,
   });
 };

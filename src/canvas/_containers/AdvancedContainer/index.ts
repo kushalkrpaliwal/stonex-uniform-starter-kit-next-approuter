@@ -16,6 +16,8 @@ export type AdvancedContainerProps = ComponentProps<
     boxShadow?: string;
     borderColor?: string;
     backgroundColor?: string;
+    hideOverlay?: boolean;
+    height?: string;
   },
   'content' | 'background'
 >;
