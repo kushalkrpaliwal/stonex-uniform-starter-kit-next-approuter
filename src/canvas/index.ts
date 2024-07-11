@@ -88,9 +88,11 @@ export const baseComponentMappings = {
   ...videoMappings,
   ...pageMapping,
   ...brandCTAMappings,
+  ...flexItemMappings,
 };
 
 import { createComponentResolver } from '@/utilities/canvas/componentResolver';
+import { flexItemMappings } from '@/canvas/_containers/FlexItem';
 
 export const componentResolver = createComponentResolver({
   ...baseComponentMappings,

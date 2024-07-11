@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { UniformSlot } from '@uniformdev/canvas-next-rsc/component';
 import { AdvancedContainerProps, AdvancedContainerVariants } from '.';
 import classNames from 'classnames';
-import { getBoxModelStyles } from '@/canvas/_containers/helpers/boxModel';
+import { getBoxModelStyles, getHeightClass } from '@/canvas/_containers/helpers/boxModel';
 
 export const AdvancedContainer: FC<AdvancedContainerProps> = ({
   title,
@@ -15,12 +15,14 @@ export const AdvancedContainer: FC<AdvancedContainerProps> = ({
   boxShadow,
   borderColor,
   backgroundColor,
+  hideOverlay,
+  height,
 }) => {
   return (
     <div
       title={title}
-      className={classNames('relative', getBoxModelStyles(boxModel), borderRadius, boxShadow, {
-        'overflow-hidden': !!borderRadius || !!slots['background'],
+      className={classNames('relative', getBoxModelStyles(boxModel), getHeightClass(height), borderRadius, boxShadow, {
+        'overflow-hidden': hideOverlay || !!borderRadius || !!slots['background'],
         'max-w-screen-xl mx-auto': component.variant !== AdvancedContainerVariants.FluidContent,
       })}
       style={{
