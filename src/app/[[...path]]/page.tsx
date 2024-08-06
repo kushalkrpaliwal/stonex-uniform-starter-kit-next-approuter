@@ -1,18 +1,21 @@
 import type { Metadata } from 'next';
 import type { Asset } from '@uniformdev/assets';
 import { PageParameters, UniformComposition, retrieveRoute } from '@uniformdev/canvas-next-rsc';
+import { ResolvedRouteGetResponse, RouteGetResponseEdgehancedComposition } from '@uniformdev/canvas';
 import { getMediaUrl } from '@/utilities';
 import { componentResolver } from '@/canvas';
 import { DynamicCSS } from '@/components/DynamicCSS/DynamicCSS';
 import ThemeProvider from '@/components/ThemeProvider';
+import { notFound } from 'next/navigation';
 
 const VERCEL_URL = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : '';
 
+const isRouteWithoutErrors = (route: ResolvedRouteGetResponse): route is RouteGetResponseEdgehancedComposition =>
+  'compositionApiResponse' in route && 'composition' in route.compositionApiResponse!;
+
 export async function generateMetadata(props: PageParameters): Promise<Metadata> {
   const route = await retrieveRoute(props);
-  if (!('compositionApiResponse' in route)) throw new Error('No composition found');
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-expect-error
+  if (!isRouteWithoutErrors(route)) return notFound();
   const composition = route.compositionApiResponse?.composition || {};
 
   const {
@@ -66,7 +69,7 @@ export default async function Home(props: PageParameters) {
   return (
     <ThemeProvider parameters={params}>
       <DynamicCSS brand={params?.brand?.value?.themeName?.toLowerCase()} theme={params?.theme?.value} />
-      <UniformComposition {...props} route={route} resolveComponent={componentResolver} mode="server" />
+      <UniformComposition {...props} route={route} resolveComponent={componentResolver} mode="static" />
     </ThemeProvider>
   );
 }
@@ -75,7 +78,7 @@ export default async function Home(props: PageParameters) {
 //export { generateStaticParams } from '@uniformdev/canvas-next-rsc';
 
 // Optionally, enable edge rendering mode to run render on the CDN nodes
-export const runtime = 'edge';
+//export const runtime = 'edge';
 
 // Change the dynamic behavior of a layout or page to fully static
-//export const dynamic = 'force-static';
+export const dynamic = 'force-static';
